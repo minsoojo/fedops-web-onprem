@@ -1,0 +1,208 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "name": "federated-task-baseline",
+    "release_version": "0.3.0",
+    "template_revision": 1
+  },
+  "compatibility": {
+    "python": ">=3.10,<3.13",
+    "fedops_participation": "==1.1.30.13",
+    "agent_studio_task_schema": 2
+  },
+  "entrypoints": {
+    "task_cli": "fedops-task",
+    "task_runtime": "federated_task.main:main",
+    "readiness": "federated_task.task_readiness.check:check_readiness"
+  },
+  "run_modes": [
+    "local-train",
+    "release-readiness",
+    "participation-readiness",
+    "participate",
+    "tool-test"
+  ],
+  "data_boundary": {
+    "raw_data_upload": false,
+    "local_path_upload": false,
+    "model_update_values_upload": false
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "role": "license",
+      "editable": false,
+      "content_type": "text/plain",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "role": "documentation",
+      "editable": true,
+      "content_type": "text/markdown",
+      "size": 2028,
+      "sha256": "c4564c43c93c8e554ab43d371275cb3d39f6bb61be988f7788eb8fa8c1bfdd57"
+    },
+    {
+      "path": "federated_task/__init__.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 67,
+      "sha256": "f0d4f9a946bf51ffefd71d48410ae0e00d7fa3475be1267bc6cbe76adae5822e"
+    },
+    {
+      "path": "federated_task/agent_tool/__init__.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 39,
+      "sha256": "f3b192c4f3ed25f3a83b19cc04b66d37a41182e8947a340b91f393358c2dfa12"
+    },
+    {
+      "path": "federated_task/agent_tool/inference.py",
+      "role": "tool_inference",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 925,
+      "sha256": "1206082189b2c101660b825e0c08a238dcd431caa92f59bf0a0a8ff6f6a0ee12"
+    },
+    {
+      "path": "federated_task/agent_tool/manifest.json",
+      "role": "tool_manifest",
+      "editable": true,
+      "content_type": "application/json",
+      "size": 680,
+      "sha256": "7e549263a2d010241d63054c002befda610178155a3ca137c1cf90b915adb25f"
+    },
+    {
+      "path": "federated_task/config.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 2243,
+      "sha256": "c50dc652f74c39b7c3b71d033f875a3b12e9d803dcd66a2ea4cb4247f56d264c"
+    },
+    {
+      "path": "federated_task/config.toml",
+      "role": "task_config",
+      "editable": true,
+      "content_type": "application/toml",
+      "size": 410,
+      "sha256": "006721693326340236cf22100a768118c7156780db1f6a62c1857778a0ad2b4d"
+    },
+    {
+      "path": "federated_task/federated_learning/__init__.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 45,
+      "sha256": "1708c248ba9b7a249fdbe260b8687d96112d001dfb09cc73eac0f457532e22c8"
+    },
+    {
+      "path": "federated_task/federated_learning/client_main.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 2630,
+      "sha256": "005bb34388c288b858436129b86c924bf92b80e1199203d4495785e1c2182467"
+    },
+    {
+      "path": "federated_task/federated_learning/client_manager_main.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 6124,
+      "sha256": "71b1e93f28a2e93e09f0e82f63401dc411aae39c0c30328ad91ed71c38d8eb5f"
+    },
+    {
+      "path": "federated_task/federated_learning/parameters.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 2843,
+      "sha256": "14596cbd3473b5ffeeb8a15211bf8ffde75a1813257ecdb84cc4d63c4c842610"
+    },
+    {
+      "path": "federated_task/local_training/__init__.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 64,
+      "sha256": "7a6569ea091fe262a05d782e7b9bb53487ca912356c6b83b26700b3d41976589"
+    },
+    {
+      "path": "federated_task/local_training/data_preparation.py",
+      "role": "data_preparation",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 3397,
+      "sha256": "947de39ff2e15148d642ea7c1e95120abe7eef5b1d1c1a20531a8427b1035447"
+    },
+    {
+      "path": "federated_task/local_training/model.py",
+      "role": "model_code",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 1075,
+      "sha256": "5cf930ace6f89946fd84731e4286fdacd560dfdc080d0a474e96991dda4a3aae"
+    },
+    {
+      "path": "federated_task/local_training/train.py",
+      "role": "local_training",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 7641,
+      "sha256": "4f71b4fabf61f16597474de078dbbfd0e41a107ecc974ec3a8a39c7c230e58c6"
+    },
+    {
+      "path": "federated_task/main.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 7171,
+      "sha256": "df10dec95ae5ee28640efbcf7d2bd05e218f2e89ef2e51b44990cc6cd49f76f8"
+    },
+    {
+      "path": "federated_task/task_readiness/__init__.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 58,
+      "sha256": "28dbd3f97c4a1a750d40e0572653699f1b69b496881ffbff81bde633b9214b34"
+    },
+    {
+      "path": "federated_task/task_readiness/check.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 8791,
+      "sha256": "90518d477b3529bac55e8a4e4ba8e3ec50eb18b818d7795aa8c5f773a9dde5fc"
+    },
+    {
+      "path": "model_release/manifest.json",
+      "role": "model_release_manifest",
+      "editable": false,
+      "content_type": "application/json",
+      "size": 385,
+      "sha256": "6a998d973463dd0c840dc99ec5a5da2a5b5c613edab6688e678f5ca48f541fd6"
+    },
+    {
+      "path": "pyproject.toml",
+      "role": "task_definition",
+      "editable": false,
+      "content_type": "application/toml",
+      "size": 1360,
+      "sha256": "e7a915e2bab7cb9199ce4a9378dacd98860f80c4a1c50590048c22fad3bcb666"
+    },
+    {
+      "path": "uv.lock",
+      "role": "dependency_lock",
+      "editable": false,
+      "content_type": "application/toml",
+      "size": 633310,
+      "sha256": "74a912f4d6f7f376dbcc48031adef96c63f76c45f90bec8f428505c91025ce4e"
+    }
+  ]
+}

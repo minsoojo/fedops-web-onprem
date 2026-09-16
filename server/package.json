@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "packageManager": "yarn@1.22.21",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "aws-sdk": "^2.1383.0",
+    "axios": "0.21.1",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "eslint-config-prettier": "^8.8.0",
+    "got": "^12.6.0",
+    "gridfs-stream": "^1.1.1",
+    "joi": "^17.9.1",
+    "jsonwebtoken": "^9.0.0",
+    "js-yaml": "^4.1.0",
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.4.0",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.4.1",
+    "node-cron": "^3.0.2",
+    "sanitize-html": "^2.10.0",
+    "socket.io": "^4.6.1",
+    "yauzl": "2.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "start": "node src",
+    "start:dev": "nodemon --watch src/ src/index.js",
+    "migrate:task-access": "node scripts/migrate-task-access.js",
+    "migrate:legacy-handles": "node scripts/migrate-legacy-handles.js",
+    "audit:registry-artifacts": "node scripts/audit-registry-artifacts.js",
+    "publish:baseline": "node scripts/publish-baseline-template.js",
+    "test": "node --test"
+  }
+}

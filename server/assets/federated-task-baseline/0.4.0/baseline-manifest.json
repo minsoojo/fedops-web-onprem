@@ -1,0 +1,179 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "name": "federated-task-baseline",
+    "release_version": "0.4.0",
+    "template_revision": 1
+  },
+  "compatibility": {
+    "python": ">=3.10,<3.13",
+    "fedops_participation": "==1.1.30.14",
+    "agent_studio_task_schema": 2
+  },
+  "entrypoints": {
+    "task_cli": "fedops-task",
+    "task_runtime": "federated_task.main:main",
+    "client": "federated_task.client_main:main",
+    "client_manager": "federated_task.client_manager_main:main",
+    "server": "federated_task.server_main:main",
+    "readiness": "federated_task.task_check:check_readiness"
+  },
+  "run_modes": [
+    "local-train",
+    "release-readiness",
+    "participation-readiness",
+    "participate",
+    "tool-test"
+  ],
+  "data_boundary": {
+    "raw_data_upload": false,
+    "local_path_upload": false,
+    "model_update_values_upload": false
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "role": "license",
+      "editable": false,
+      "content_type": "text/plain",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "role": "documentation",
+      "editable": true,
+      "content_type": "text/markdown",
+      "size": 2691,
+      "sha256": "3673dbe6cbeddd89c847eaaf2042c4426795306c0b59e4e69c5a625d6d1b76d0"
+    },
+    {
+      "path": "federated_task/__init__.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 67,
+      "sha256": "24a7bfc97f94afb6cf84597413bbdb90825505562036ebe2c69804bcbda3b634"
+    },
+    {
+      "path": "federated_task/client_main.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 2585,
+      "sha256": "210bd23dc35f0c637e1961abe6c8b1570333b4e97b7d3fcf835101ed5287bf58"
+    },
+    {
+      "path": "federated_task/client_manager_main.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 6125,
+      "sha256": "1d1b5ca64e0912416dd8f2c2aa267f8dc285e91b071b1a2fabe319e004caa5c0"
+    },
+    {
+      "path": "federated_task/conf/config.yaml",
+      "role": "task_config",
+      "editable": true,
+      "content_type": "application/yaml",
+      "size": 790,
+      "sha256": "d73062c494f9533c8b32eaaef196aef0eff67487612e5543487b3865dadc05af"
+    },
+    {
+      "path": "federated_task/config.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 2576,
+      "sha256": "a8f3d2d14a8d64ca111f895a04017c90256d91f3a3b02adfd82aecc02c0d5cc1"
+    },
+    {
+      "path": "federated_task/data_preparation.py",
+      "role": "data_preparation",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 3857,
+      "sha256": "d916d6269e92924068607c53ea015e5d06fe1eb54d8a63493cf1e915816d3f01"
+    },
+    {
+      "path": "federated_task/main.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 7095,
+      "sha256": "58bc1d783d85ec281d348364fc77eb12bea03bd13e5223458d1d0a8160b7ee00"
+    },
+    {
+      "path": "federated_task/manifest.json",
+      "role": "tool_manifest",
+      "editable": true,
+      "content_type": "application/json",
+      "size": 664,
+      "sha256": "461a995d4eecdffae6cb51ae362794cb8bdb4b167a49683e4c169aa65332f9f7"
+    },
+    {
+      "path": "federated_task/model.py",
+      "role": "model_code",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 1184,
+      "sha256": "5a0421b4f5bafcdc170bf48c1a5e5e6392a07e9937e28b3aaed9dca37d6d858d"
+    },
+    {
+      "path": "federated_task/server_main.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 1095,
+      "sha256": "48c9b752704d052f49c492c2b33c066cdeed00f689301ec0785351eebeff4a8e"
+    },
+    {
+      "path": "federated_task/task_check.py",
+      "role": "runtime",
+      "editable": false,
+      "content_type": "text/x-python",
+      "size": 10205,
+      "sha256": "c7e2e4a298e50cf02a1b6c437d9acad9f740d8ab8efca561fb63dcafe25a6e2a"
+    },
+    {
+      "path": "federated_task/tool.py",
+      "role": "tool_inference",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 896,
+      "sha256": "6aa309ecd0e911e72da9d8723b5ad935b09422f3550b19b2b6d3b58fbcd93314"
+    },
+    {
+      "path": "federated_task/training.py",
+      "role": "local_training",
+      "editable": true,
+      "content_type": "text/x-python",
+      "size": 7827,
+      "sha256": "7085530ca8058f36c972d1069e0619086efb2d9529ea3e845c1e1e7cfcbc07d6"
+    },
+    {
+      "path": "model_release/manifest.json",
+      "role": "model_release_manifest",
+      "editable": false,
+      "content_type": "application/json",
+      "size": 359,
+      "sha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b"
+    },
+    {
+      "path": "pyproject.toml",
+      "role": "task_definition",
+      "editable": false,
+      "content_type": "application/toml",
+      "size": 1695,
+      "sha256": "56a7793212451c1d88d0f8603fbe48656149c8614ad68d51c2555b6f96173b25"
+    },
+    {
+      "path": "uv.lock",
+      "role": "dependency_lock",
+      "editable": false,
+      "content_type": "application/toml",
+      "size": 638622,
+      "sha256": "d21c8baae3644d97df7aef03898c7865e6058ce619b5dafbf61f5d0659727106"
+    }
+  ]
+}

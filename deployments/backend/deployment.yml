@@ -1,0 +1,105 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fedops-web-backend
+  labels:
+    app: fedops-web-backend
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  minReadySeconds: 5
+  progressDeadlineSeconds: 900
+  selector:
+    matchLabels:
+      app: fedops-web-backend
+  template:
+    metadata:
+      annotations:
+        fedops.gachon.ac.kr/release: "optional-server-validation-2026-09-08"
+      labels:
+        app: fedops-web-backend
+    spec:
+      containers:
+        - name: fedops-web-backend-container
+          image: node:18.16.0
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              mkdir -p ~/.ssh &&
+              echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa &&
+              chmod 600 ~/.ssh/id_rsa &&
+              attempt=1 &&
+              until ssh-keyscan github.com >> ~/.ssh/known_hosts; do
+                if [ "$attempt" -ge 5 ]; then
+                  echo "GitHub host key lookup failed after $attempt attempts." >&2
+                  exit 1
+                fi
+                attempt=$((attempt + 1))
+                sleep 2
+              done &&
+              attempt=1 &&
+              until git clone --depth 1 -b main git@github.com:gachon-CCLab/FedOps-Web.git /app; do
+                if [ "$attempt" -ge 5 ]; then
+                  echo "FedOps-Web clone failed after $attempt attempts." >&2
+                  exit 1
+                fi
+                if [ -e /app ]; then
+                  rm -r /app
+                fi
+                attempt=$((attempt + 1))
+                sleep 3
+              done &&
+              cd /app/server &&
+              echo "PORT=$PORT" >> .env &&
+              echo "MONGO_URI=$MONGO_URI" >> .env &&
+              echo "JWT_SECRET=$JWT_SECRET" >> .env &&
+              echo "BUCKET_NAME=$BUCKET_NAME" >> .env &&
+              echo "ACCESS_KEY_ID=$ACCESS_KEY_ID" >> .env &&
+              echo "ACCESS_SECRET_KEY=$ACCESS_SECRET_KEY" >> .env &&
+              echo "REGION_NAME=$REGION_NAME" >> .env &&
+              echo "TASK_BASELINE_TEMPLATE_NAME=$TASK_BASELINE_TEMPLATE_NAME" >> .env &&
+              echo "TASK_BASELINE_TEMPLATE_VERSION=$TASK_BASELINE_TEMPLATE_VERSION" >> .env &&
+              echo "TASK_BASELINE_TEMPLATE_REVISION=$TASK_BASELINE_TEMPLATE_REVISION" >> .env &&
+              echo "REGISTRY_API_BASE_URL=$REGISTRY_API_BASE_URL" >> .env &&
+              echo "NODE_ENV=production" >> .env &&
+              yarn &&
+              yarn start
+          envFrom:
+            - secretRef:
+                name: fedops-backend-env-secrets
+          env:
+            - name: NODE_PATH
+              value: "/usr/local/lib/node_modules"
+            - name: TASK_BASELINE_TEMPLATE_NAME
+              value: "federated-task-baseline"
+            - name: TASK_BASELINE_TEMPLATE_VERSION
+              value: "0.19.0"
+            - name: TASK_BASELINE_TEMPLATE_REVISION
+              value: "1"
+            - name: REGISTRY_API_BASE_URL
+              value: "http://fedops1-registry-svc.fedops.svc.cluster.local:8012"
+          ports:
+            - containerPort: 4000
+          startupProbe:
+            httpGet:
+              path: /fedops/api/health
+              port: 4000
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 120
+          readinessProbe:
+            httpGet:
+              path: /fedops/api/health
+              port: 4000
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 3
+          lifecycle:
+            preStop:
+              exec:
+                command: ["/bin/sh", "-c", "sleep 5"]
+      terminationGracePeriodSeconds: 30

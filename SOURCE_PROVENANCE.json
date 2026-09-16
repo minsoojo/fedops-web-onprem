@@ -1,0 +1,3362 @@
+{
+  "sourceExport": "FedOps-Web",
+  "basis": "Sanitized handoff plus 67-file configuration manifest; new history, not an upstream fork or full export.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sourceSha256": "7bc064af7a42c7160fa8be8c81b9be29fe422002f99cfec83f4f557f40d6bea4",
+      "repositorySha256": "eec48a32aa06ed6807e519a78d5dbc64c2a8ab925dc2198e111e23a5727ded65"
+    },
+    {
+      "path": "README.md",
+      "sourceSha256": "32b4cd53bdfba4e71d25bcee4be58bf80ea5ceed60d1c4b57be4ea9321494827",
+      "repositorySha256": "32b4cd53bdfba4e71d25bcee4be58bf80ea5ceed60d1c4b57be4ea9321494827"
+    },
+    {
+      "path": "client/.gitignore",
+      "sourceSha256": "d373417ea2a8844e3b7a1515aab123e90fbeb4b7225144d55d243d9f6f04f73a",
+      "repositorySha256": "d373417ea2a8844e3b7a1515aab123e90fbeb4b7225144d55d243d9f6f04f73a"
+    },
+    {
+      "path": "client/.yarnrc.yml",
+      "sourceSha256": "473e6def86fc03638120e0c01d0c8bbab095677256460fa4ea763e5d4697f270",
+      "repositorySha256": "473e6def86fc03638120e0c01d0c8bbab095677256460fa4ea763e5d4697f270"
+    },
+    {
+      "path": "client/README.md",
+      "sourceSha256": "20e75db14a0355dbc0e1124d5145b0e17a4253e60ed896b94229c7a3afee7660",
+      "repositorySha256": "20e75db14a0355dbc0e1124d5145b0e17a4253e60ed896b94229c7a3afee7660"
+    },
+    {
+      "path": "client/jsconfig.json",
+      "sourceSha256": "d2c041d503c71acac3e7fbff04c811309198e7ee0f5085bd5ac710983fbdfee0",
+      "repositorySha256": "d2c041d503c71acac3e7fbff04c811309198e7ee0f5085bd5ac710983fbdfee0"
+    },
+    {
+      "path": "client/package.json",
+      "sourceSha256": "a4264dcf1d98f838ed81309a66ec0e17a6b59498e069cbbb01576d0ac30641dd",
+      "repositorySha256": "a4264dcf1d98f838ed81309a66ec0e17a6b59498e069cbbb01576d0ac30641dd"
+    },
+    {
+      "path": "client/public/FedOps_logo_without_letter.png",
+      "sourceSha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5",
+      "repositorySha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5"
+    },
+    {
+      "path": "client/public/favicon.ico",
+      "sourceSha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd",
+      "repositorySha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+    },
+    {
+      "path": "client/public/fedops/FedOps_logo_without_letter.png",
+      "sourceSha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5",
+      "repositorySha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5"
+    },
+    {
+      "path": "client/public/fedops/favicon.ico",
+      "sourceSha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd",
+      "repositorySha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+    },
+    {
+      "path": "client/public/fedops/img/FedOps_logo_without_letter.png",
+      "sourceSha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5",
+      "repositorySha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5"
+    },
+    {
+      "path": "client/public/fedops/img/cambridge.png",
+      "sourceSha256": "cf2907a1869e7485d369f6251b127c8dba1b18c698de1afa222a8badf0eaec4d",
+      "repositorySha256": "cf2907a1869e7485d369f6251b127c8dba1b18c698de1afa222a8badf0eaec4d"
+    },
+    {
+      "path": "client/public/fedops/img/ccl_logo.png",
+      "sourceSha256": "46896915f65d803ec0b586788e13cf9b3b1ff834061d5b3fd7b660d4103e6c12",
+      "repositorySha256": "46896915f65d803ec0b586788e13cf9b3b1ff834061d5b3fd7b660d4103e6c12"
+    },
+    {
+      "path": "client/public/fedops/img/fedops_logo_with_letter.png",
+      "sourceSha256": "ddb53841aaf6c93164c77b6ab0cb6d52b270f174190f91d0c89a1ae3d23cfec1",
+      "repositorySha256": "ddb53841aaf6c93164c77b6ab0cb6d52b270f174190f91d0c89a1ae3d23cfec1"
+    },
+    {
+      "path": "client/public/fedops/img/flower.png",
+      "sourceSha256": "dd53256d214b5d93fb8eca14066acbfbfa53ea73a80cf1e11b7e363a5cc7cfa4",
+      "repositorySha256": "dd53256d214b5d93fb8eca14066acbfbfa53ea73a80cf1e11b7e363a5cc7cfa4"
+    },
+    {
+      "path": "client/public/fedops/img/gachon.jpeg",
+      "sourceSha256": "fc0b29e4945c4fdc3d598e03959693d2a633ff3590b7d9defe7274e14bbb0f13",
+      "repositorySha256": "fc0b29e4945c4fdc3d598e03959693d2a633ff3590b7d9defe7274e14bbb0f13"
+    },
+    {
+      "path": "client/public/fedops/manifest.json",
+      "sourceSha256": "73fcffa546cd6898eeb3cfdd0696982ce18db0cf1eee41c04866de38b38a9713",
+      "repositorySha256": "73fcffa546cd6898eeb3cfdd0696982ce18db0cf1eee41c04866de38b38a9713"
+    },
+    {
+      "path": "client/public/img/cambridge.png",
+      "sourceSha256": "cf2907a1869e7485d369f6251b127c8dba1b18c698de1afa222a8badf0eaec4d",
+      "repositorySha256": "cf2907a1869e7485d369f6251b127c8dba1b18c698de1afa222a8badf0eaec4d"
+    },
+    {
+      "path": "client/public/img/ccl_logo.png",
+      "sourceSha256": "46896915f65d803ec0b586788e13cf9b3b1ff834061d5b3fd7b660d4103e6c12",
+      "repositorySha256": "46896915f65d803ec0b586788e13cf9b3b1ff834061d5b3fd7b660d4103e6c12"
+    },
+    {
+      "path": "client/public/img/fedops_logo_with_letter.png",
+      "sourceSha256": "ddb53841aaf6c93164c77b6ab0cb6d52b270f174190f91d0c89a1ae3d23cfec1",
+      "repositorySha256": "ddb53841aaf6c93164c77b6ab0cb6d52b270f174190f91d0c89a1ae3d23cfec1"
+    },
+    {
+      "path": "client/public/img/flower.png",
+      "sourceSha256": "dd53256d214b5d93fb8eca14066acbfbfa53ea73a80cf1e11b7e363a5cc7cfa4",
+      "repositorySha256": "dd53256d214b5d93fb8eca14066acbfbfa53ea73a80cf1e11b7e363a5cc7cfa4"
+    },
+    {
+      "path": "client/public/img/gachon.jpeg",
+      "sourceSha256": "fc0b29e4945c4fdc3d598e03959693d2a633ff3590b7d9defe7274e14bbb0f13",
+      "repositorySha256": "fc0b29e4945c4fdc3d598e03959693d2a633ff3590b7d9defe7274e14bbb0f13"
+    },
+    {
+      "path": "client/public/index.html",
+      "sourceSha256": "2ce732a17d124e414444279c6ad062719a80c680fbec16007b3e3d0dc6f5907d",
+      "repositorySha256": "2ce732a17d124e414444279c6ad062719a80c680fbec16007b3e3d0dc6f5907d"
+    },
+    {
+      "path": "client/public/logo192.png",
+      "sourceSha256": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00",
+      "repositorySha256": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00"
+    },
+    {
+      "path": "client/public/logo512.png",
+      "sourceSha256": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461",
+      "repositorySha256": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461"
+    },
+    {
+      "path": "client/public/manifest.json",
+      "sourceSha256": "73fcffa546cd6898eeb3cfdd0696982ce18db0cf1eee41c04866de38b38a9713",
+      "repositorySha256": "73fcffa546cd6898eeb3cfdd0696982ce18db0cf1eee41c04866de38b38a9713"
+    },
+    {
+      "path": "client/public/robots.txt",
+      "sourceSha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "repositorySha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2"
+    },
+    {
+      "path": "client/src/App.css",
+      "sourceSha256": "c5ac42e56bf8c34eb741d752bc879144f186d7ca0a48fcbb73b967177f7a9240",
+      "repositorySha256": "c5ac42e56bf8c34eb741d752bc879144f186d7ca0a48fcbb73b967177f7a9240"
+    },
+    {
+      "path": "client/src/App.js",
+      "sourceSha256": "054e61b695cea722eee459218ff7e6dade3a07680fe5bd3f05a23fbf4b9ff0c0",
+      "repositorySha256": "054e61b695cea722eee459218ff7e6dade3a07680fe5bd3f05a23fbf4b9ff0c0"
+    },
+    {
+      "path": "client/src/App.test.js",
+      "sourceSha256": "f7784693194b8657d1bf70c37ea70f4a2d694c4566ec41550a8e650eb600aaa4",
+      "repositorySha256": "f7784693194b8657d1bf70c37ea70f4a2d694c4566ec41550a8e650eb600aaa4"
+    },
+    {
+      "path": "client/src/components/auth/LoginRequiredNotice.js",
+      "sourceSha256": "0a9363e7f39cebddc178c5c8de8f12e228c0b746763831f52469a84ae3a47061",
+      "repositorySha256": "0a9363e7f39cebddc178c5c8de8f12e228c0b746763831f52469a84ae3a47061"
+    },
+    {
+      "path": "client/src/components/auth/Register.js",
+      "sourceSha256": "13c5fa7e175f21dc50bf650e917b2ff791add876d917661ba12f359329ab51cb",
+      "repositorySha256": "13c5fa7e175f21dc50bf650e917b2ff791add876d917661ba12f359329ab51cb"
+    },
+    {
+      "path": "client/src/components/common/Base.js",
+      "sourceSha256": "ba2266f8bea2ce85b7d74d85156518cfeee504928ce989b962f1aba6225571e9",
+      "repositorySha256": "ba2266f8bea2ce85b7d74d85156518cfeee504928ce989b962f1aba6225571e9"
+    },
+    {
+      "path": "client/src/components/common/ContentWrapper.js",
+      "sourceSha256": "b267086b3115f35c353343ff766749083636563fec9f65c321c86d49042de39e",
+      "repositorySha256": "b267086b3115f35c353343ff766749083636563fec9f65c321c86d49042de39e"
+    },
+    {
+      "path": "client/src/components/common/Footer.js",
+      "sourceSha256": "071286b7376fcec4bebd87eb5d5ced4902b636d2864a964ce6968701a851106c",
+      "repositorySha256": "071286b7376fcec4bebd87eb5d5ced4902b636d2864a964ce6968701a851106c"
+    },
+    {
+      "path": "client/src/components/common/Header.js",
+      "sourceSha256": "6d2d484cff316d38b3b72e159dd9b9e949aafd3280822a7b7674fe5c330214a4",
+      "repositorySha256": "6d2d484cff316d38b3b72e159dd9b9e949aafd3280822a7b7674fe5c330214a4"
+    },
+    {
+      "path": "client/src/components/common/PageHeader.js",
+      "sourceSha256": "1372a7db56f6943215b6d25c64438504aafdaf799719637750caf87a0679541b",
+      "repositorySha256": "1372a7db56f6943215b6d25c64438504aafdaf799719637750caf87a0679541b"
+    },
+    {
+      "path": "client/src/components/common/Sidebar.js",
+      "sourceSha256": "1843ea24dd3333b68487dab0fee102f95c7ecd4b319c36143ec736d759ec0190",
+      "repositorySha256": "1843ea24dd3333b68487dab0fee102f95c7ecd4b319c36143ec736d759ec0190"
+    },
+    {
+      "path": "client/src/components/common/TransitionAlerts.js",
+      "sourceSha256": "2ee088bec06b14bd0a035289d14cfa3e4f9822f9d2cf9b57340748cc1858386f",
+      "repositorySha256": "2ee088bec06b14bd0a035289d14cfa3e4f9822f9d2cf9b57340748cc1858386f"
+    },
+    {
+      "path": "client/src/components/common/YamlGenerator.js",
+      "sourceSha256": "6558716e37d6f2740d3e9fc3ee53a5166cf13a769c8a695c6ab570d0c92cf755",
+      "repositorySha256": "6558716e37d6f2740d3e9fc3ee53a5166cf13a769c8a695c6ab570d0c92cf755"
+    },
+    {
+      "path": "client/src/components/debug/ConfigDebugPanel.js",
+      "sourceSha256": "860164d5bafe8a29610f361eec03dca273fd43e9b740e129f3549f8c4d09a135",
+      "repositorySha256": "860164d5bafe8a29610f361eec03dca273fd43e9b740e129f3549f8c4d09a135"
+    },
+    {
+      "path": "client/src/components/editorial/EditorialDetailPage.js",
+      "sourceSha256": "644aa882b3d85959e16241f24f4f7a030cf5cbe07525ab7e01ded59c62c4b3f2",
+      "repositorySha256": "644aa882b3d85959e16241f24f4f7a030cf5cbe07525ab7e01ded59c62c4b3f2"
+    },
+    {
+      "path": "client/src/components/editorial/EditorialIndexPage.js",
+      "sourceSha256": "fa0618a521c72a88814b747af184f44f3906c1812b0a0cc431161ace8ee813cb",
+      "repositorySha256": "fa0618a521c72a88814b747af184f44f3906c1812b0a0cc431161ace8ee813cb"
+    },
+    {
+      "path": "client/src/components/hooks/useAuth.js",
+      "sourceSha256": "bcb8da8ac2d04d88d9a2e4e3ca79fb77c60b080c507c02730bf625c93ba9185b",
+      "repositorySha256": "bcb8da8ac2d04d88d9a2e4e3ca79fb77c60b080c507c02730bf625c93ba9185b"
+    },
+    {
+      "path": "client/src/components/hooks/useRealtimeUpdates.js",
+      "sourceSha256": "99411c4cb8e7a6658c27c1145a7c251e91856bd0f160fdca1cd2cf3b2205f456",
+      "repositorySha256": "99411c4cb8e7a6658c27c1145a7c251e91856bd0f160fdca1cd2cf3b2205f456"
+    },
+    {
+      "path": "client/src/components/hooks/useTaskData.js",
+      "sourceSha256": "47c98290e1865183d281233be94ebb94e34f043f14cb8fc9f6313bee9a337543",
+      "repositorySha256": "47c98290e1865183d281233be94ebb94e34f043f14cb8fc9f6313bee9a337543"
+    },
+    {
+      "path": "client/src/components/monitoring/Chart.js",
+      "sourceSha256": "dd54e58b79648590570a5e99da2879059c084b65875ac78294c6e3b96d5a738d",
+      "repositorySha256": "dd54e58b79648590570a5e99da2879059c084b65875ac78294c6e3b96d5a738d"
+    },
+    {
+      "path": "client/src/components/monitoring/EvaluationSummary.js",
+      "sourceSha256": "0b18ad084ec89b77d66dc578d65a06b9fb4495a2e2348c4351f496698fffe340",
+      "repositorySha256": "0b18ad084ec89b77d66dc578d65a06b9fb4495a2e2348c4351f496698fffe340"
+    },
+    {
+      "path": "client/src/components/monitoring/EvaluationSummary.test.js",
+      "sourceSha256": "763c41583ed5731237f50e0a588ed473d892a22a3997f7d0731da710ac23d30e",
+      "repositorySha256": "763c41583ed5731237f50e0a588ed473d892a22a3997f7d0731da710ac23d30e"
+    },
+    {
+      "path": "client/src/components/monitoring/LogStreamer.js",
+      "sourceSha256": "5baad185be3fe3262e53debd608b28b20ed35ebd6ab544e04a0e146521adf104",
+      "repositorySha256": "5baad185be3fe3262e53debd608b28b20ed35ebd6ab544e04a0e146521adf104"
+    },
+    {
+      "path": "client/src/components/monitoring/MetricPanel.js",
+      "sourceSha256": "5c8d4f501d0357daff631a844cc6051b336f939d7737739b4adb2c23c3e7345e",
+      "repositorySha256": "5c8d4f501d0357daff631a844cc6051b336f939d7737739b4adb2c23c3e7345e"
+    },
+    {
+      "path": "client/src/components/monitoring/MonitoringSummary.js",
+      "sourceSha256": "c754634aed692e5e5c3a15584e817d45b623591e136439a2653811f10f16eb5b",
+      "repositorySha256": "c754634aed692e5e5c3a15584e817d45b623591e136439a2653811f10f16eb5b"
+    },
+    {
+      "path": "client/src/components/monitoring/RealtimeStatus.js",
+      "sourceSha256": "a175d7e6a8b0b539eea9fa52c3a5810ac9e5b5fce24ae4047ffac8f12b4842b4",
+      "repositorySha256": "a175d7e6a8b0b539eea9fa52c3a5810ac9e5b5fce24ae4047ffac8f12b4842b4"
+    },
+    {
+      "path": "client/src/components/monitoring/ServerControl.js",
+      "sourceSha256": "9d91252948bf8087a7c6bc211ccf0bd3c9837e0b2110b5d838ea2ed1578354de",
+      "repositorySha256": "9d91252948bf8087a7c6bc211ccf0bd3c9837e0b2110b5d838ea2ed1578354de"
+    },
+    {
+      "path": "client/src/components/monitoring/ServerControl.test.js",
+      "sourceSha256": "d3cda4d60b23ac422fe00cbda65e7e2d2d9f61bb6b1650b879ac6cf6c2518f47",
+      "repositorySha256": "d3cda4d60b23ac422fe00cbda65e7e2d2d9f61bb6b1650b879ac6cf6c2518f47"
+    },
+    {
+      "path": "client/src/components/monitoring/runtimeCreation.js",
+      "sourceSha256": "b02f1233694c81f41d3e0de5e56426c91e7cbda0c831937f023d4c18e2bc1199",
+      "repositorySha256": "b02f1233694c81f41d3e0de5e56426c91e7cbda0c831937f023d4c18e2bc1199"
+    },
+    {
+      "path": "client/src/components/monitoring/runtimeCreation.test.js",
+      "sourceSha256": "ba52f3c04cb66d945f705f7267264875c44941af6402df0245aca7f9aec49002",
+      "repositorySha256": "ba52f3c04cb66d945f705f7267264875c44941af6402df0245aca7f9aec49002"
+    },
+    {
+      "path": "client/src/components/route/ProtectedRoute.js",
+      "sourceSha256": "3ef0b96beae040ada97909bed5a2917e5067bc05fba27c9582d06a847ae4873d",
+      "repositorySha256": "3ef0b96beae040ada97909bed5a2917e5067bc05fba27c9582d06a847ae4873d"
+    },
+    {
+      "path": "client/src/components/task/NavTabs.js",
+      "sourceSha256": "cee259bb142b754328ab3946daa50009993f0f7fc2d4867a3f95dd0719b7d434",
+      "repositorySha256": "cee259bb142b754328ab3946daa50009993f0f7fc2d4867a3f95dd0719b7d434"
+    },
+    {
+      "path": "client/src/components/task/TaskConfigForm.js",
+      "sourceSha256": "d1c076c085576b0c81dea36eba53426b1fa4a92703bfba99ede0bf5ad4ebba1a",
+      "repositorySha256": "d1c076c085576b0c81dea36eba53426b1fa4a92703bfba99ede0bf5ad4ebba1a"
+    },
+    {
+      "path": "client/src/components/task/TaskDetailContent.js",
+      "sourceSha256": "c77df176261f73bc1ae59cdf130c922b1b0e61cad6a9d9868a911f2dd69872ac",
+      "repositorySha256": "c77df176261f73bc1ae59cdf130c922b1b0e61cad6a9d9868a911f2dd69872ac"
+    },
+    {
+      "path": "client/src/components/task/TaskDevice.js",
+      "sourceSha256": "950dda4bad3f247d6ecf513552f5450fcbb08926d782dea8a42c43ef7a41f5b7",
+      "repositorySha256": "950dda4bad3f247d6ecf513552f5450fcbb08926d782dea8a42c43ef7a41f5b7"
+    },
+    {
+      "path": "client/src/components/task/TaskHubContent.js",
+      "sourceSha256": "cb80110a2738d64b7562d2b1c0c36f2d41c6674859f8bd1400abc6c1ffc37431",
+      "repositorySha256": "cb80110a2738d64b7562d2b1c0c36f2d41c6674859f8bd1400abc6c1ffc37431"
+    },
+    {
+      "path": "client/src/components/task/TaskRefresh.js",
+      "sourceSha256": "d9ae58fed767a54b76432cb703ddc8527ece698782e85ba90be9b5922bc7c52f",
+      "repositorySha256": "d9ae58fed767a54b76432cb703ddc8527ece698782e85ba90be9b5922bc7c52f"
+    },
+    {
+      "path": "client/src/components/task/TaskReleasePanel.js",
+      "sourceSha256": "aac2981cd98105118125051fb7a2328ed782fc4f7da02bb0baa64c4931145004",
+      "repositorySha256": "aac2981cd98105118125051fb7a2328ed782fc4f7da02bb0baa64c4931145004"
+    },
+    {
+      "path": "client/src/favicon.js",
+      "sourceSha256": "ffbe727e595e74200e158a16369be76b76eeaff908df3f64c6876612258970f8",
+      "repositorySha256": "ffbe727e595e74200e158a16369be76b76eeaff908df3f64c6876612258970f8"
+    },
+    {
+      "path": "client/src/img/FedOps_Client_tutorials.png",
+      "sourceSha256": "e303cb6662d55e6447561b4c479d67a24138fd39cc2017c136106367e8808fe3",
+      "repositorySha256": "e303cb6662d55e6447561b4c479d67a24138fd39cc2017c136106367e8808fe3"
+    },
+    {
+      "path": "client/src/img/FedOps_Custom_tutorials.png",
+      "sourceSha256": "e00a64dcb17a03ba2c4583e4d6a0b29adbdbbe52e14477e27375fd9d27ceac11",
+      "repositorySha256": "e00a64dcb17a03ba2c4583e4d6a0b29adbdbbe52e14477e27375fd9d27ceac11"
+    },
+    {
+      "path": "client/src/img/FedOps_HPO.png",
+      "sourceSha256": "4804ebc06dd7c79364117f78b9e80d075d424560a6cd6f89402ab3f0d1761ee6",
+      "repositorySha256": "4804ebc06dd7c79364117f78b9e80d075d424560a6cd6f89402ab3f0d1761ee6"
+    },
+    {
+      "path": "client/src/img/FedOps_LLM.png",
+      "sourceSha256": "466822c73368dba6dd51f27c18868594a6d9c3b60055852814b29d5863454ea3",
+      "repositorySha256": "466822c73368dba6dd51f27c18868594a6d9c3b60055852814b29d5863454ea3"
+    },
+    {
+      "path": "client/src/img/FedOps_Multimodal.png",
+      "sourceSha256": "3882628288c8566d74830bccb3559ff9114b1f91ec27e51f6513be5c8a2af4a1",
+      "repositorySha256": "3882628288c8566d74830bccb3559ff9114b1f91ec27e51f6513be5c8a2af4a1"
+    },
+    {
+      "path": "client/src/img/FedOps_Server_tutorials.png",
+      "sourceSha256": "48d9dba3fc9876e0cfd65bfb4a84a8823c3f949d51f5142b2847bf331aade8e6",
+      "repositorySha256": "48d9dba3fc9876e0cfd65bfb4a84a8823c3f949d51f5142b2847bf331aade8e6"
+    },
+    {
+      "path": "client/src/img/FedOps_Wearable.png",
+      "sourceSha256": "3f5d2f3be2dd0956a4aecb727d05afc8499084e1c54577616f12651e59cf9bfc",
+      "repositorySha256": "3f5d2f3be2dd0956a4aecb727d05afc8499084e1c54577616f12651e59cf9bfc"
+    },
+    {
+      "path": "client/src/img/FedOps_logo_without_letter.png",
+      "sourceSha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5",
+      "repositorySha256": "b6fc04bd40b6f48b08597c2f49607885062959c5470f728b2c1b4539685435a5"
+    },
+    {
+      "path": "client/src/img/FedOps_with_Flower.png",
+      "sourceSha256": "ec4ec91c8e18b00702b5404b4d63f9538c94b99fcd1fb1852b1005d22d2ffd82",
+      "repositorySha256": "ec4ec91c8e18b00702b5404b4d63f9538c94b99fcd1fb1852b1005d22d2ffd82"
+    },
+    {
+      "path": "client/src/img/fedops_logo_with_letter.png",
+      "sourceSha256": "ddb53841aaf6c93164c77b6ab0cb6d52b270f174190f91d0c89a1ae3d23cfec1",
+      "repositorySha256": "ddb53841aaf6c93164c77b6ab0cb6d52b270f174190f91d0c89a1ae3d23cfec1"
+    },
+    {
+      "path": "client/src/index.css",
+      "sourceSha256": "bb045a173580eb2752a1794547d35f3a0e4f7dac92d16ee6a6aae14129041e36",
+      "repositorySha256": "bb045a173580eb2752a1794547d35f3a0e4f7dac92d16ee6a6aae14129041e36"
+    },
+    {
+      "path": "client/src/index.js",
+      "sourceSha256": "1d7eb7a4044cab7d261d0c30374109e1aab9a2bca52b6bca29d6fb5adf1ee2c3",
+      "repositorySha256": "1d7eb7a4044cab7d261d0c30374109e1aab9a2bca52b6bca29d6fb5adf1ee2c3"
+    },
+    {
+      "path": "client/src/lib/api/auth.js",
+      "sourceSha256": "793ab85b4b5b5dba3b1c15dda21230bc93e947621e8002f957e328199cc7953d",
+      "repositorySha256": "793ab85b4b5b5dba3b1c15dda21230bc93e947621e8002f957e328199cc7953d"
+    },
+    {
+      "path": "client/src/lib/api/client.js",
+      "sourceSha256": "fce74e7875ac3ccea5ce83477064bb21c8c0076f6e1ef3e38c4a49162b5170f7",
+      "repositorySha256": "fce74e7875ac3ccea5ce83477064bb21c8c0076f6e1ef3e38c4a49162b5170f7"
+    },
+    {
+      "path": "client/src/lib/api/model.js",
+      "sourceSha256": "6f8dacac6c288402d4d5c97c2819b68bd22fed860fe0769a534ccc1c5d3486b5",
+      "repositorySha256": "6f8dacac6c288402d4d5c97c2819b68bd22fed860fe0769a534ccc1c5d3486b5"
+    },
+    {
+      "path": "client/src/lib/api/serverControlAPI.js",
+      "sourceSha256": "6782ca276eb780ff2a1f662d31867598eb36948d59c34cec07b279dffd6943a8",
+      "repositorySha256": "6782ca276eb780ff2a1f662d31867598eb36948d59c34cec07b279dffd6943a8"
+    },
+    {
+      "path": "client/src/lib/api/taskReleases.js",
+      "sourceSha256": "d7dac53d985843573ac4131c87fae19f25f66081e8ee576b60d0f7fe6535d3f6",
+      "repositorySha256": "d7dac53d985843573ac4131c87fae19f25f66081e8ee576b60d0f7fe6535d3f6"
+    },
+    {
+      "path": "client/src/lib/api/tasks.js",
+      "sourceSha256": "ad9dfb16bdeb619d4c03f534cac4fec4ec049af91de007274c08a59fd67b4304",
+      "repositorySha256": "ad9dfb16bdeb619d4c03f534cac4fec4ec049af91de007274c08a59fd67b4304"
+    },
+    {
+      "path": "client/src/lib/authNavigation.js",
+      "sourceSha256": "215a1ebfa266008bebff2a9811aa91c615ec76e84d7860a08e578b1bb5715e0f",
+      "repositorySha256": "215a1ebfa266008bebff2a9811aa91c615ec76e84d7860a08e578b1bb5715e0f"
+    },
+    {
+      "path": "client/src/lib/authNavigation.test.js",
+      "sourceSha256": "4b5c25ab0f679a5542af3ac1e69e6b1a8139b671719210bdb0f2b77de770ad41",
+      "repositorySha256": "4b5c25ab0f679a5542af3ac1e69e6b1a8139b671719210bdb0f2b77de770ad41"
+    },
+    {
+      "path": "client/src/lib/clientPresence.js",
+      "sourceSha256": "c55118c95b51983654330c34b8e8210d2c9c10249efdad839aae18e534af8dff",
+      "repositorySha256": "c55118c95b51983654330c34b8e8210d2c9c10249efdad839aae18e534af8dff"
+    },
+    {
+      "path": "client/src/lib/clientPresence.test.js",
+      "sourceSha256": "2d158a386416c9944998b867564d248fbcb3647a8332541c54f7ac839e25a1fc",
+      "repositorySha256": "2d158a386416c9944998b867564d248fbcb3647a8332541c54f7ac839e25a1fc"
+    },
+    {
+      "path": "client/src/lib/createRequestSaga.js",
+      "sourceSha256": "2a50f51ccab804895b5018354d893c9b94736c7bb91b79f5109efefe9434598c",
+      "repositorySha256": "2a50f51ccab804895b5018354d893c9b94736c7bb91b79f5109efefe9434598c"
+    },
+    {
+      "path": "client/src/lib/taskList.js",
+      "sourceSha256": "1587ab87d1678bd18d37658452b09c2827abcfa23bf4e7f069cb66fdc2adee61",
+      "repositorySha256": "1587ab87d1678bd18d37658452b09c2827abcfa23bf4e7f069cb66fdc2adee61"
+    },
+    {
+      "path": "client/src/lib/taskList.test.js",
+      "sourceSha256": "2caf47d389174725d4331fa5fd3c1d0a34a6edbced3e251aa759e7037a6483b0",
+      "repositorySha256": "2caf47d389174725d4331fa5fd3c1d0a34a6edbced3e251aa759e7037a6483b0"
+    },
+    {
+      "path": "client/src/lib/taskMetadata.js",
+      "sourceSha256": "4fcc0733f636875d0e45a7d72d754fc12d5ec23aa8a13f6cc0604adec83c9efd",
+      "repositorySha256": "4fcc0733f636875d0e45a7d72d754fc12d5ec23aa8a13f6cc0604adec83c9efd"
+    },
+    {
+      "path": "client/src/lib/taskMetadata.test.js",
+      "sourceSha256": "8a091e00f9abcb88e0335edc9cfa164518e7f6c78ed4632301d5747031c2db47",
+      "repositorySha256": "8a091e00f9abcb88e0335edc9cfa164518e7f6c78ed4632301d5747031c2db47"
+    },
+    {
+      "path": "client/src/logo.svg",
+      "sourceSha256": "6000b0e9b0b05b3f112de04f0d039768a1db63588ff9b6ef7099dbd71632f383",
+      "repositorySha256": "6000b0e9b0b05b3f112de04f0d039768a1db63588ff9b6ef7099dbd71632f383"
+    },
+    {
+      "path": "client/src/modules/auth.js",
+      "sourceSha256": "3c4ee18156ae3fcc9c7839a69cb907764356c5c90c60bcb86267e190e94742ae",
+      "repositorySha256": "3c4ee18156ae3fcc9c7839a69cb907764356c5c90c60bcb86267e190e94742ae"
+    },
+    {
+      "path": "client/src/modules/create.js",
+      "sourceSha256": "06d51da539d3603cfcfcc2afbf6f56db6fda9baa16ba33887f1bc249867c6481",
+      "repositorySha256": "06d51da539d3603cfcfcc2afbf6f56db6fda9baa16ba33887f1bc249867c6481"
+    },
+    {
+      "path": "client/src/modules/index.js",
+      "sourceSha256": "cdcffd70040038d1d64cbe5bace1dd27bd968786493a035cf23f56435a0579dd",
+      "repositorySha256": "cdcffd70040038d1d64cbe5bace1dd27bd968786493a035cf23f56435a0579dd"
+    },
+    {
+      "path": "client/src/modules/loading.js",
+      "sourceSha256": "184c3cfd07b269c476bb6eb829fa3676d01ec7fbae3c83ac3525538c83f134f2",
+      "repositorySha256": "184c3cfd07b269c476bb6eb829fa3676d01ec7fbae3c83ac3525538c83f134f2"
+    },
+    {
+      "path": "client/src/modules/model.js",
+      "sourceSha256": "219fc868335731d87a1d8417c45b70c98372045d71a10ef09c0194f710aa4680",
+      "repositorySha256": "219fc868335731d87a1d8417c45b70c98372045d71a10ef09c0194f710aa4680"
+    },
+    {
+      "path": "client/src/modules/task.js",
+      "sourceSha256": "83a60f20fdb1231ce86bae01c81e516a94199d2dd2434ca28cb952fbb600fb1f",
+      "repositorySha256": "83a60f20fdb1231ce86bae01c81e516a94199d2dd2434ca28cb952fbb600fb1f"
+    },
+    {
+      "path": "client/src/modules/tasks.js",
+      "sourceSha256": "4f58e2626950a0ed8a25726a82201931c70041fbbaf6fe486269e2887b40f554",
+      "repositorySha256": "4f58e2626950a0ed8a25726a82201931c70041fbbaf6fe486269e2887b40f554"
+    },
+    {
+      "path": "client/src/modules/user.js",
+      "sourceSha256": "f721131369709332ba32f6eba9b51d63fdce889ed9fea4e22667fe4623ce1b01",
+      "repositorySha256": "f721131369709332ba32f6eba9b51d63fdce889ed9fea4e22667fe4623ce1b01"
+    },
+    {
+      "path": "client/src/pages/BlogEditPage.js",
+      "sourceSha256": "f245115d026e3da2aeb4407f502aa21ecfa91aafc79da03d93dec0a7c95b6e79",
+      "repositorySha256": "f245115d026e3da2aeb4407f502aa21ecfa91aafc79da03d93dec0a7c95b6e79"
+    },
+    {
+      "path": "client/src/pages/BlogPage.js",
+      "sourceSha256": "02a7dc5eff85f01351a65d4fcafd0a83965b91f07646c22861d9e4c571188906",
+      "repositorySha256": "02a7dc5eff85f01351a65d4fcafd0a83965b91f07646c22861d9e4c571188906"
+    },
+    {
+      "path": "client/src/pages/BlogwritePage.js",
+      "sourceSha256": "b2c58a3fd51d94baea981ae879d622976bfd92282121f532adcfb7637fa6dba1",
+      "repositorySha256": "b2c58a3fd51d94baea981ae879d622976bfd92282121f532adcfb7637fa6dba1"
+    },
+    {
+      "path": "client/src/pages/CreatePage.js",
+      "sourceSha256": "9ec22a6af7a70812022f43c40f08d7499658514e03ddc0239fdc5d51d389d9bd",
+      "repositorySha256": "9ec22a6af7a70812022f43c40f08d7499658514e03ddc0239fdc5d51d389d9bd"
+    },
+    {
+      "path": "client/src/pages/FedOps1.2.js",
+      "sourceSha256": "f198bfc55d9dbd0d2ccd87058b4648b5ce4355762537eadc41644e9bc02ce268",
+      "repositorySha256": "f198bfc55d9dbd0d2ccd87058b4648b5ce4355762537eadc41644e9bc02ce268"
+    },
+    {
+      "path": "client/src/pages/FedOpsTutorialsSection.js",
+      "sourceSha256": "f6147769d1ab8e1bd03fb0fcec81de92732ca0e293fef6fd802d684402a5e728",
+      "repositorySha256": "f6147769d1ab8e1bd03fb0fcec81de92732ca0e293fef6fd802d684402a5e728"
+    },
+    {
+      "path": "client/src/pages/GlobalModelPage.js",
+      "sourceSha256": "6ee067cdb1ddd9ac3a32838db6ca6f8b4eb34b82e3a321ab40ff621bcf43fb03",
+      "repositorySha256": "6ee067cdb1ddd9ac3a32838db6ca6f8b4eb34b82e3a321ab40ff621bcf43fb03"
+    },
+    {
+      "path": "client/src/pages/HowtouseFedOps.js",
+      "sourceSha256": "0e69dae73f5b3c09b93e51ce7d01df04148bcb4411bab2fb13bbabb119dcbf17",
+      "repositorySha256": "0e69dae73f5b3c09b93e51ce7d01df04148bcb4411bab2fb13bbabb119dcbf17"
+    },
+    {
+      "path": "client/src/pages/JoinCommunity.js",
+      "sourceSha256": "1f96dc065319c2a16c117eba19aba64193161f70cc66d9094a98b84a330f74d0",
+      "repositorySha256": "1f96dc065319c2a16c117eba19aba64193161f70cc66d9094a98b84a330f74d0"
+    },
+    {
+      "path": "client/src/pages/LoginPage.js",
+      "sourceSha256": "35e752cb588348dc7210dd8580bda7f17072709ae677722056cad73095a0ccd7",
+      "repositorySha256": "35e752cb588348dc7210dd8580bda7f17072709ae677722056cad73095a0ccd7"
+    },
+    {
+      "path": "client/src/pages/MainPage.js",
+      "sourceSha256": "5e27d517ec08f654b328d58353ffd46849ad61a3fa153db06419d8ddcfa5f842",
+      "repositorySha256": "5e27d517ec08f654b328d58353ffd46849ad61a3fa153db06419d8ddcfa5f842"
+    },
+    {
+      "path": "client/src/pages/MonitoringPage.js",
+      "sourceSha256": "92537eaf359dd65484157bba35c09c14e3d53bcf9043ce35af934491645a250f",
+      "repositorySha256": "92537eaf359dd65484157bba35c09c14e3d53bcf9043ce35af934491645a250f"
+    },
+    {
+      "path": "client/src/pages/NewsPage.js",
+      "sourceSha256": "faecf14e73bc498c2fa0388c28eabd754ac0b524dd9a183b9eda42ca6809c0e3",
+      "repositorySha256": "faecf14e73bc498c2fa0388c28eabd754ac0b524dd9a183b9eda42ca6809c0e3"
+    },
+    {
+      "path": "client/src/pages/Overview.js",
+      "sourceSha256": "94ab3cd0b3da56e105772dcd99a3f12af467461f471f32bec2213c86f94a900c",
+      "repositorySha256": "94ab3cd0b3da56e105772dcd99a3f12af467461f471f32bec2213c86f94a900c"
+    },
+    {
+      "path": "client/src/pages/PublicTaskDetailPage.js",
+      "sourceSha256": "06e9ff82cb898e316196fb77bec73887997ee2097f8103216bc6c9a6b36761fe",
+      "repositorySha256": "06e9ff82cb898e316196fb77bec73887997ee2097f8103216bc6c9a6b36761fe"
+    },
+    {
+      "path": "client/src/pages/PublicTasksPage.js",
+      "sourceSha256": "aac6f4b22e8382f683cf5f543bb71797dd2e923c8b47e81a1239be6f18aefaeb",
+      "repositorySha256": "aac6f4b22e8382f683cf5f543bb71797dd2e923c8b47e81a1239be6f18aefaeb"
+    },
+    {
+      "path": "client/src/pages/RegisterPage.js",
+      "sourceSha256": "fb7cd352e6138c73f9563c62d6610dcaff78d141f82ca4431a30774e11d5e320",
+      "repositorySha256": "fb7cd352e6138c73f9563c62d6610dcaff78d141f82ca4431a30774e11d5e320"
+    },
+    {
+      "path": "client/src/pages/SbaFlManagePage.js",
+      "sourceSha256": "4846e520072ccd6a8530074674964c823a5f458ec9acabcb404311aa0a759420",
+      "repositorySha256": "4846e520072ccd6a8530074674964c823a5f458ec9acabcb404311aa0a759420"
+    },
+    {
+      "path": "client/src/pages/ServerManagementPage.js",
+      "sourceSha256": "115c894521038d9e09228304cf0063eefd72b13125eb7564562c6f065b0136e3",
+      "repositorySha256": "115c894521038d9e09228304cf0063eefd72b13125eb7564562c6f065b0136e3"
+    },
+    {
+      "path": "client/src/pages/SharedTaskDetailPage.js",
+      "sourceSha256": "a9171ea20b96a3f4b6004bbdb42471777b8f8d7787f5a8a4395b814058c31085",
+      "repositorySha256": "a9171ea20b96a3f4b6004bbdb42471777b8f8d7787f5a8a4395b814058c31085"
+    },
+    {
+      "path": "client/src/pages/TaskDetailPage.js",
+      "sourceSha256": "2b5be37b80945ba0c69990b7b24025a7e10ed0e8d4a7169e55b013c84b0b3875",
+      "repositorySha256": "2b5be37b80945ba0c69990b7b24025a7e10ed0e8d4a7169e55b013c84b0b3875"
+    },
+    {
+      "path": "client/src/pages/TaskPage.js",
+      "sourceSha256": "6593369088bec8b800fce1d56b068aad2c2d34ca05ff4127246c65e51ac4e52a",
+      "repositorySha256": "6593369088bec8b800fce1d56b068aad2c2d34ca05ff4127246c65e51ac4e52a"
+    },
+    {
+      "path": "client/src/pages/TaskParticipantsPage.js",
+      "sourceSha256": "af687c55ad1093eef66c8c74113d14591c7ac7e2900f284b9147080a9022b212",
+      "repositorySha256": "af687c55ad1093eef66c8c74113d14591c7ac7e2900f284b9147080a9022b212"
+    },
+    {
+      "path": "client/src/pages/Why_FedOps.js",
+      "sourceSha256": "9dfc7c28ad11bb3d890bf1a00efdc9b387c7d7f6b8dc4344b75173ecb248afb8",
+      "repositorySha256": "9dfc7c28ad11bb3d890bf1a00efdc9b387c7d7f6b8dc4344b75173ecb248afb8"
+    },
+    {
+      "path": "client/src/reportWebVitals.js",
+      "sourceSha256": "714851669856152806c289f9aac6240b414bbac50c60ee4f7e6247f31eac0c1c",
+      "repositorySha256": "714851669856152806c289f9aac6240b414bbac50c60ee4f7e6247f31eac0c1c"
+    },
+    {
+      "path": "client/src/setupTests.js",
+      "sourceSha256": "22583759d0045fdf8d62c9db0aacba9fd8bddde79c671aa08c97dcfd4e930cc6",
+      "repositorySha256": "22583759d0045fdf8d62c9db0aacba9fd8bddde79c671aa08c97dcfd4e930cc6"
+    },
+    {
+      "path": "client/src/theme/fedOpsTheme.js",
+      "sourceSha256": "40adeaaf0b46fc674e904653c6d6ad025cf250ed4f8f4816d37aaaf97f721986",
+      "repositorySha256": "40adeaaf0b46fc674e904653c6d6ad025cf250ed4f8f4816d37aaaf97f721986"
+    },
+    {
+      "path": "client/yarn.lock",
+      "sourceSha256": "843e41b0973eb4265f626f4988742ff1a869acb201217bc6a63743b9d8d33dda",
+      "repositorySha256": "843e41b0973eb4265f626f4988742ff1a869acb201217bc6a63743b9d8d33dda"
+    },
+    {
+      "path": "deployments/backend/deployment.yml",
+      "sourceSha256": "521231a740aa844f5af4492843c04d90bf12f863329150c2b0ce410dc5ed5dfb",
+      "repositorySha256": "521231a740aa844f5af4492843c04d90bf12f863329150c2b0ce410dc5ed5dfb"
+    },
+    {
+      "path": "deployments/backend/service.yml",
+      "sourceSha256": "01e8cec7da1932b07daa2b6397ce36771107b691bf06b852bc373531f836831e",
+      "repositorySha256": "01e8cec7da1932b07daa2b6397ce36771107b691bf06b852bc373531f836831e"
+    },
+    {
+      "path": "deployments/frontend/deployment.yml",
+      "sourceSha256": "d4afea6772a6757d7dbfb92a3de59feb869cad53e50ea989c42bc7e5df9fd9d0",
+      "repositorySha256": "d4afea6772a6757d7dbfb92a3de59feb869cad53e50ea989c42bc7e5df9fd9d0"
+    },
+    {
+      "path": "deployments/frontend/service.yml",
+      "sourceSha256": "cc0b67753998bad9f1d6b02d0fa3690b220f2e36034b371c98d1be65045a7238",
+      "repositorySha256": "cc0b67753998bad9f1d6b02d0fa3690b220f2e36034b371c98d1be65045a7238"
+    },
+    {
+      "path": "server/.eslintrc.json",
+      "sourceSha256": "73efd4db6103b10081edd944364160ce0c3644376b865860993c09fe2ec6a385",
+      "repositorySha256": "73efd4db6103b10081edd944364160ce0c3644376b865860993c09fe2ec6a385"
+    },
+    {
+      "path": "server/.yarnrc.yml",
+      "sourceSha256": "473e6def86fc03638120e0c01d0c8bbab095677256460fa4ea763e5d4697f270",
+      "repositorySha256": "473e6def86fc03638120e0c01d0c8bbab095677256460fa4ea763e5d4697f270"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/baseline-manifest.json",
+      "sourceSha256": "d6e4460968a6201eedc115f9b68549e2a3ea4518da95e4ab545f67ea5db1dd95",
+      "repositorySha256": "d6e4460968a6201eedc115f9b68549e2a3ea4518da95e4ab545f67ea5db1dd95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/README.md",
+      "sourceSha256": "6f668a2e2ba9b18eba5f522fbaae5a8c9527dbc8d0edf8afec04a4bb5e08f20f",
+      "repositorySha256": "6f668a2e2ba9b18eba5f522fbaae5a8c9527dbc8d0edf8afec04a4bb5e08f20f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/__init__.py",
+      "sourceSha256": "b8558dd78e738c08d4fd561d854b3615c0c6338eec3f2db4cb71d2127297209b",
+      "repositorySha256": "b8558dd78e738c08d4fd561d854b3615c0c6338eec3f2db4cb71d2127297209b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "f8eadb03fde3cd4e2c91ee5e5107952e67850cd385fd3d3ef910f929fbff16d3",
+      "repositorySha256": "f8eadb03fde3cd4e2c91ee5e5107952e67850cd385fd3d3ef910f929fbff16d3"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/config.py",
+      "sourceSha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20",
+      "repositorySha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c",
+      "repositorySha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "10a613860a5febd96b56f24e53b6d19c37bb0e4ea1eb83dda6bf3d94f4d2a3a7",
+      "repositorySha256": "10a613860a5febd96b56f24e53b6d19c37bb0e4ea1eb83dda6bf3d94f4d2a3a7"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2d85cdee15368e0ec4d452c625fcfce7c1f7695b98d0768e77c4709e4f47c99c",
+      "repositorySha256": "2d85cdee15368e0ec4d452c625fcfce7c1f7695b98d0768e77c4709e4f47c99c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/main.py",
+      "sourceSha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535",
+      "repositorySha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "5c3c379df120623ba83a2a4fdcd921ebb47103be2e3fce5f5397d3ffa3b60a45",
+      "repositorySha256": "5c3c379df120623ba83a2a4fdcd921ebb47103be2e3fce5f5397d3ffa3b60a45"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/pyproject.toml",
+      "sourceSha256": "44635403d141753677dda63cf23f3cd550135f825ac98e2fec6a725474b653d4",
+      "repositorySha256": "44635403d141753677dda63cf23f3cd550135f825ac98e2fec6a725474b653d4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/requirements.txt",
+      "sourceSha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba",
+      "repositorySha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/files/uv.lock",
+      "sourceSha256": "2a751127f2130b46b750f14fd0b5cebba8e907f36619e06f2f50dcb7a571d67e",
+      "repositorySha256": "2a751127f2130b46b750f14fd0b5cebba8e907f36619e06f2f50dcb7a571d67e"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.10.0/provenance.json",
+      "sourceSha256": "97124fe1119b55c59ebe7ae21a459a9155b945bb9295746a09b7063f5289c5ab",
+      "repositorySha256": "97124fe1119b55c59ebe7ae21a459a9155b945bb9295746a09b7063f5289c5ab"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/baseline-manifest.json",
+      "sourceSha256": "280b10ebe8718182f65b8a5ac88128eb8cfef05b623f34c6b0906825ee0d7739",
+      "repositorySha256": "280b10ebe8718182f65b8a5ac88128eb8cfef05b623f34c6b0906825ee0d7739"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/README.md",
+      "sourceSha256": "721629c38179a8887ed0ce19a2bf7f4b451e184e9322ef201e2fad530f0c20a8",
+      "repositorySha256": "721629c38179a8887ed0ce19a2bf7f4b451e184e9322ef201e2fad530f0c20a8"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/__init__.py",
+      "sourceSha256": "dbd1ede8b89277ff309e801b7dbb59b7ae71a5136d9d905e8250538f471b509a",
+      "repositorySha256": "dbd1ede8b89277ff309e801b7dbb59b7ae71a5136d9d905e8250538f471b509a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540",
+      "repositorySha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/config.py",
+      "sourceSha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20",
+      "repositorySha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c",
+      "repositorySha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2",
+      "repositorySha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2d85cdee15368e0ec4d452c625fcfce7c1f7695b98d0768e77c4709e4f47c99c",
+      "repositorySha256": "2d85cdee15368e0ec4d452c625fcfce7c1f7695b98d0768e77c4709e4f47c99c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/main.py",
+      "sourceSha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535",
+      "repositorySha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "5c3c379df120623ba83a2a4fdcd921ebb47103be2e3fce5f5397d3ffa3b60a45",
+      "repositorySha256": "5c3c379df120623ba83a2a4fdcd921ebb47103be2e3fce5f5397d3ffa3b60a45"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/pyproject.toml",
+      "sourceSha256": "ed067e2102584ff241bec5c1ebe1cefc1c92fad0bcaf2b8cc1fd321dc7a10b18",
+      "repositorySha256": "ed067e2102584ff241bec5c1ebe1cefc1c92fad0bcaf2b8cc1fd321dc7a10b18"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/requirements.txt",
+      "sourceSha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba",
+      "repositorySha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/files/uv.lock",
+      "sourceSha256": "6e993da216cdc236117920c11ea5a1108b272824a2f07b25a5e47fcf7a709be6",
+      "repositorySha256": "6e993da216cdc236117920c11ea5a1108b272824a2f07b25a5e47fcf7a709be6"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.11.0/provenance.json",
+      "sourceSha256": "e83310932f90652eb2cfb0700a58490cff21b01bb60f363b2608ddb4e596e379",
+      "repositorySha256": "e83310932f90652eb2cfb0700a58490cff21b01bb60f363b2608ddb4e596e379"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/baseline-manifest.json",
+      "sourceSha256": "f27f9afc2b187d3f663dd88aa781ba34e9cdaab8894c56ad9eb07d147f7de83d",
+      "repositorySha256": "f27f9afc2b187d3f663dd88aa781ba34e9cdaab8894c56ad9eb07d147f7de83d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/README.md",
+      "sourceSha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae",
+      "repositorySha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/__init__.py",
+      "sourceSha256": "2bfe9f35564a9c8d189ed3e9fa012d8273f1ccbbe8585c892b1cd40d69e8ea6d",
+      "repositorySha256": "2bfe9f35564a9c8d189ed3e9fa012d8273f1ccbbe8585c892b1cd40d69e8ea6d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540",
+      "repositorySha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/config.py",
+      "sourceSha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20",
+      "repositorySha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c",
+      "repositorySha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2",
+      "repositorySha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/main.py",
+      "sourceSha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535",
+      "repositorySha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "e048e72cb0aa5e9c03773785e8a6b8b5237b031fae6049d92ffec8ac7dca13f0",
+      "repositorySha256": "e048e72cb0aa5e9c03773785e8a6b8b5237b031fae6049d92ffec8ac7dca13f0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "8211e3358587af294f6ffdf7cf97417d666a535d0894be14fa92dafc120a0c4b",
+      "repositorySha256": "8211e3358587af294f6ffdf7cf97417d666a535d0894be14fa92dafc120a0c4b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/pyproject.toml",
+      "sourceSha256": "9d544a89a0dbb6069ea60cfb5aae7e7aac8cc3ffa42a863ad6291056b60214ec",
+      "repositorySha256": "9d544a89a0dbb6069ea60cfb5aae7e7aac8cc3ffa42a863ad6291056b60214ec"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/requirements.txt",
+      "sourceSha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba",
+      "repositorySha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/files/uv.lock",
+      "sourceSha256": "dae8100a06c7e987655f8442d51a9aacb657e1287f2d9e7caf4306c6ebb7c3dc",
+      "repositorySha256": "dae8100a06c7e987655f8442d51a9aacb657e1287f2d9e7caf4306c6ebb7c3dc"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.12.0/provenance.json",
+      "sourceSha256": "6005be5e145227baf92f5332d9f0179e29938937edb2f64998feaa231ab69e7a",
+      "repositorySha256": "6005be5e145227baf92f5332d9f0179e29938937edb2f64998feaa231ab69e7a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/baseline-manifest.json",
+      "sourceSha256": "99e31ded4258be903e287a0bde0f900e1035e9be85e16ee9152dc7d40e6c71b1",
+      "repositorySha256": "99e31ded4258be903e287a0bde0f900e1035e9be85e16ee9152dc7d40e6c71b1"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/README.md",
+      "sourceSha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae",
+      "repositorySha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/__init__.py",
+      "sourceSha256": "ea48760bf0669a502cc2c83a29943b5cc4ba3e94e5bdf2542f2bbc8483e0e2fe",
+      "repositorySha256": "ea48760bf0669a502cc2c83a29943b5cc4ba3e94e5bdf2542f2bbc8483e0e2fe"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540",
+      "repositorySha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/config.py",
+      "sourceSha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20",
+      "repositorySha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c",
+      "repositorySha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2",
+      "repositorySha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/main.py",
+      "sourceSha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535",
+      "repositorySha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "e048e72cb0aa5e9c03773785e8a6b8b5237b031fae6049d92ffec8ac7dca13f0",
+      "repositorySha256": "e048e72cb0aa5e9c03773785e8a6b8b5237b031fae6049d92ffec8ac7dca13f0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "8211e3358587af294f6ffdf7cf97417d666a535d0894be14fa92dafc120a0c4b",
+      "repositorySha256": "8211e3358587af294f6ffdf7cf97417d666a535d0894be14fa92dafc120a0c4b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/pyproject.toml",
+      "sourceSha256": "75bc61b54dcc69c1d0404c6ddc3ee1cff432fe79fc21eb294371b001042bf579",
+      "repositorySha256": "75bc61b54dcc69c1d0404c6ddc3ee1cff432fe79fc21eb294371b001042bf579"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/requirements.txt",
+      "sourceSha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba",
+      "repositorySha256": "45f90c9a623800346cdfd0be6866ccf4a78b8a59dd91e004b93d145baeffd2ba"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/files/uv.lock",
+      "sourceSha256": "d8e996579da4c1ee35a33a2540927d7d791e2c0caf7e0c4633607e74cafbc0eb",
+      "repositorySha256": "d8e996579da4c1ee35a33a2540927d7d791e2c0caf7e0c4633607e74cafbc0eb"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.13.0/provenance.json",
+      "sourceSha256": "ca665b3d5ebc2a010b5e0555100e5cd149dab21bbc9a08c4059c6ea12a2dd0e3",
+      "repositorySha256": "ca665b3d5ebc2a010b5e0555100e5cd149dab21bbc9a08c4059c6ea12a2dd0e3"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/baseline-manifest.json",
+      "sourceSha256": "deab4f5b1b99860b92f349d8ca2dc2f82f3b4186b4cb4503f17b02c913c26caa",
+      "repositorySha256": "deab4f5b1b99860b92f349d8ca2dc2f82f3b4186b4cb4503f17b02c913c26caa"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/README.md",
+      "sourceSha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae",
+      "repositorySha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/__init__.py",
+      "sourceSha256": "434cbd119fa08dfff605c64c1beeffcb585c7c43902b5df0bc2d4d52e99af08b",
+      "repositorySha256": "434cbd119fa08dfff605c64c1beeffcb585c7c43902b5df0bc2d4d52e99af08b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540",
+      "repositorySha256": "29fbab2c1f4d54afbdc468717a4279ced786931265804de79a60fe7bc449e540"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/config.py",
+      "sourceSha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20",
+      "repositorySha256": "4ed6aeb4f55a46608f80cb483cde2bff9f377aaf736bab7193126850fb630a20"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c",
+      "repositorySha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2",
+      "repositorySha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/main.py",
+      "sourceSha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535",
+      "repositorySha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "e048e72cb0aa5e9c03773785e8a6b8b5237b031fae6049d92ffec8ac7dca13f0",
+      "repositorySha256": "e048e72cb0aa5e9c03773785e8a6b8b5237b031fae6049d92ffec8ac7dca13f0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef",
+      "repositorySha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/pyproject.toml",
+      "sourceSha256": "a5a5de0f2eb3817c36f83385edb8a58e22a0b23878add8b5789b86a2baa1106a",
+      "repositorySha256": "a5a5de0f2eb3817c36f83385edb8a58e22a0b23878add8b5789b86a2baa1106a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/requirements.txt",
+      "sourceSha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff",
+      "repositorySha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/files/uv.lock",
+      "sourceSha256": "c80513a1472f18245a87e57475fb566cf99d9be5650521195b4f05e816467f20",
+      "repositorySha256": "c80513a1472f18245a87e57475fb566cf99d9be5650521195b4f05e816467f20"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.14.0/provenance.json",
+      "sourceSha256": "ee9f22b88fded187f27b40f37383a2216d07fe0d063cfa2b6180d36365eb9f7e",
+      "repositorySha256": "ee9f22b88fded187f27b40f37383a2216d07fe0d063cfa2b6180d36365eb9f7e"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/baseline-manifest.json",
+      "sourceSha256": "6f051ac389bab5e57bac74ad950d86cd67e7d2ca1d59e1ee016197735798a37f",
+      "repositorySha256": "6f051ac389bab5e57bac74ad950d86cd67e7d2ca1d59e1ee016197735798a37f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/README.md",
+      "sourceSha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae",
+      "repositorySha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/__init__.py",
+      "sourceSha256": "ce00965b7d18b647558220e344da047401548f92b3cddee420cfef64061ae0bc",
+      "repositorySha256": "ce00965b7d18b647558220e344da047401548f92b3cddee420cfef64061ae0bc"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c",
+      "repositorySha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/config.py",
+      "sourceSha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf",
+      "repositorySha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de",
+      "repositorySha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2",
+      "repositorySha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2",
+      "repositorySha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/main.py",
+      "sourceSha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535",
+      "repositorySha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89",
+      "repositorySha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef",
+      "repositorySha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/pyproject.toml",
+      "sourceSha256": "ff66a1b8c8415c0a427b2a6b9234dd349f097097642d7b17ac823f352cd1bd9e",
+      "repositorySha256": "ff66a1b8c8415c0a427b2a6b9234dd349f097097642d7b17ac823f352cd1bd9e"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/requirements.txt",
+      "sourceSha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff",
+      "repositorySha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/files/uv.lock",
+      "sourceSha256": "f568d891d7d9c8ead2de5a55e6e682f153a296a04bde7c6441c8ed2b56bb5930",
+      "repositorySha256": "f568d891d7d9c8ead2de5a55e6e682f153a296a04bde7c6441c8ed2b56bb5930"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.15.0/provenance.json",
+      "sourceSha256": "b79202e2d66c33e616a69075e99d8f5166af4134a01db31a2241922a7a5aed41",
+      "repositorySha256": "b79202e2d66c33e616a69075e99d8f5166af4134a01db31a2241922a7a5aed41"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/baseline-manifest.json",
+      "sourceSha256": "502d4cd95f208219f571b927dd28bee96cefcbc9d137c927680bb0feccddf004",
+      "repositorySha256": "502d4cd95f208219f571b927dd28bee96cefcbc9d137c927680bb0feccddf004"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/README.md",
+      "sourceSha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae",
+      "repositorySha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/__init__.py",
+      "sourceSha256": "2ab7729749607fb3240e4719814303a980dddbcead69d54c3aac567e29b58e2f",
+      "repositorySha256": "2ab7729749607fb3240e4719814303a980dddbcead69d54c3aac567e29b58e2f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c",
+      "repositorySha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/config.py",
+      "sourceSha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf",
+      "repositorySha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de",
+      "repositorySha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2",
+      "repositorySha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2",
+      "repositorySha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/main.py",
+      "sourceSha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd",
+      "repositorySha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89",
+      "repositorySha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef",
+      "repositorySha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/pyproject.toml",
+      "sourceSha256": "7a2e2b0971d8f263916069ffca65521c9bcd0e5284bbaf05a584a26dcc95494f",
+      "repositorySha256": "7a2e2b0971d8f263916069ffca65521c9bcd0e5284bbaf05a584a26dcc95494f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/requirements.txt",
+      "sourceSha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff",
+      "repositorySha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/files/uv.lock",
+      "sourceSha256": "36cf0b5ad6b51afd6814e3c06723546b6b0703eb1586a034e76cf180b6105d9c",
+      "repositorySha256": "36cf0b5ad6b51afd6814e3c06723546b6b0703eb1586a034e76cf180b6105d9c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.16.0/provenance.json",
+      "sourceSha256": "2740e7e4c4211114fb0d8e255511d62669f7b6359f0ef1e903c9fec37a706d68",
+      "repositorySha256": "2740e7e4c4211114fb0d8e255511d62669f7b6359f0ef1e903c9fec37a706d68"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/baseline-manifest.json",
+      "sourceSha256": "f6e29aebc83edf13367ecacc2b0187b9604a802a44471de777e6411d4382f804",
+      "repositorySha256": "f6e29aebc83edf13367ecacc2b0187b9604a802a44471de777e6411d4382f804"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/README.md",
+      "sourceSha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae",
+      "repositorySha256": "3af00b22edc80404567239a97d8e827054723bb67992d54e84d2a78b9da9cdae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/__init__.py",
+      "sourceSha256": "f61111522ef704ba154273fc024b71e867393f62882fced2f4226659ce15853d",
+      "repositorySha256": "f61111522ef704ba154273fc024b71e867393f62882fced2f4226659ce15853d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c",
+      "repositorySha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/config.py",
+      "sourceSha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf",
+      "repositorySha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de",
+      "repositorySha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2",
+      "repositorySha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2",
+      "repositorySha256": "fb5f553c5e4aba2fd19e3be34afc76c89f9be517ed34b632703b7cc181e8e6d2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/main.py",
+      "sourceSha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd",
+      "repositorySha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89",
+      "repositorySha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef",
+      "repositorySha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "ae9a533fd353acd5c71afc944fecdcd1e9603b93b14289d88147a6dd8937afb4",
+      "repositorySha256": "ae9a533fd353acd5c71afc944fecdcd1e9603b93b14289d88147a6dd8937afb4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "4f0a31ce10c45974a889352f603c5dc2de1c4c10ff488fea1395ca1285834372",
+      "repositorySha256": "4f0a31ce10c45974a889352f603c5dc2de1c4c10ff488fea1395ca1285834372"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/pyproject.toml",
+      "sourceSha256": "1cb224a6293ef45c0f001960b3c6cfb99901ad4dc03af2ce8edbed0c8a89a27f",
+      "repositorySha256": "1cb224a6293ef45c0f001960b3c6cfb99901ad4dc03af2ce8edbed0c8a89a27f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/requirements.txt",
+      "sourceSha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff",
+      "repositorySha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/files/uv.lock",
+      "sourceSha256": "93527c6dd1ab40bd35ef55b5b44ebcfa6194352109bde1f2f58ee8aa5665c12d",
+      "repositorySha256": "93527c6dd1ab40bd35ef55b5b44ebcfa6194352109bde1f2f58ee8aa5665c12d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.17.0/provenance.json",
+      "sourceSha256": "9536672de1aa010e1389453c566816b96256aab8a672ae70f086d96ae10a010b",
+      "repositorySha256": "9536672de1aa010e1389453c566816b96256aab8a672ae70f086d96ae10a010b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/baseline-manifest.json",
+      "sourceSha256": "51bd78028891339eaee6f1265c9bdcbd87bfadd1669aa796778ecea7128c6eed",
+      "repositorySha256": "51bd78028891339eaee6f1265c9bdcbd87bfadd1669aa796778ecea7128c6eed"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/README.md",
+      "sourceSha256": "2a6006a49c3fa269e8af8d63115272b91c92a92f4967c41d76232a35a6532254",
+      "repositorySha256": "2a6006a49c3fa269e8af8d63115272b91c92a92f4967c41d76232a35a6532254"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/__init__.py",
+      "sourceSha256": "7d360cac1acc38eb7ee3ec0abdfffb53c79ecd943c658084385a18642b4f0778",
+      "repositorySha256": "7d360cac1acc38eb7ee3ec0abdfffb53c79ecd943c658084385a18642b4f0778"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c",
+      "repositorySha256": "514b2d37ded166bc8d18ad3cffbeaf0ae70d90e8203f9d3b36fd91a5adbe979c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/config.py",
+      "sourceSha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf",
+      "repositorySha256": "3449a5b9a19ba8991c71d95cde1668da3ee2f71257e6b30c6fe6c7fcf597c1cf"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de",
+      "repositorySha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2",
+      "repositorySha256": "14e428f78e2a0353bc25e88989718764d85bce3fa8edb559954f93f77c3098b2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "c4feac0534a9710164a9befced5307ee2f80f1ee305f5f028f6e92cea9fc625f",
+      "repositorySha256": "c4feac0534a9710164a9befced5307ee2f80f1ee305f5f028f6e92cea9fc625f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/main.py",
+      "sourceSha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd",
+      "repositorySha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89",
+      "repositorySha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef",
+      "repositorySha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "d8b8644a781fb27224193e30d1057bd764438186e7a28e94927ac90733aa21c9",
+      "repositorySha256": "d8b8644a781fb27224193e30d1057bd764438186e7a28e94927ac90733aa21c9"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "cdf2a4fc7d0b2adbf463d5efae2afef953e5e396dd0ee3441feafdb102f3daae",
+      "repositorySha256": "cdf2a4fc7d0b2adbf463d5efae2afef953e5e396dd0ee3441feafdb102f3daae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/pyproject.toml",
+      "sourceSha256": "847021712ab2fec6a07235f53b079f98ec1333652f9c71c2a1bc6dc1961e5798",
+      "repositorySha256": "847021712ab2fec6a07235f53b079f98ec1333652f9c71c2a1bc6dc1961e5798"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/requirements.txt",
+      "sourceSha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff",
+      "repositorySha256": "70deab257c8e2d111fb854b23b765e4973af6d4bde9987aff5a9bfb8d04387ff"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/files/uv.lock",
+      "sourceSha256": "3182df893a30f6cad8702f326358a77f60caebd8a0f17827cd2f362b9a467b70",
+      "repositorySha256": "3182df893a30f6cad8702f326358a77f60caebd8a0f17827cd2f362b9a467b70"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.18.0/provenance.json",
+      "sourceSha256": "7e9a54838ed51d4f0e74117bb4fb06aeff6feac501f2459976135bd6f0bbb214",
+      "repositorySha256": "7e9a54838ed51d4f0e74117bb4fb06aeff6feac501f2459976135bd6f0bbb214"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/baseline-manifest.json",
+      "sourceSha256": "0745cd1be41c993b570410128736e2eba8f5e5cc272f1ad71a5b11860d4afa7b",
+      "repositorySha256": "0745cd1be41c993b570410128736e2eba8f5e5cc272f1ad71a5b11860d4afa7b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/README.md",
+      "sourceSha256": "2a6006a49c3fa269e8af8d63115272b91c92a92f4967c41d76232a35a6532254",
+      "repositorySha256": "2a6006a49c3fa269e8af8d63115272b91c92a92f4967c41d76232a35a6532254"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/__init__.py",
+      "sourceSha256": "ce5122baba50769ba6bf4ed52efe09adfabf466d69378bd517f7ee65de0ca86b",
+      "repositorySha256": "ce5122baba50769ba6bf4ed52efe09adfabf466d69378bd517f7ee65de0ca86b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "27da8d7c5bd2bb571c0729d4f37a28ccebfc179c9da47592aecf67a97b720e5f",
+      "repositorySha256": "27da8d7c5bd2bb571c0729d4f37a28ccebfc179c9da47592aecf67a97b720e5f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/config.py",
+      "sourceSha256": "80750ca1a64d68f61f050d09f0ef032c7cc34967cada206955311c8c13af67f3",
+      "repositorySha256": "80750ca1a64d68f61f050d09f0ef032c7cc34967cada206955311c8c13af67f3"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de",
+      "repositorySha256": "beb9657c09ecbf7ddb71bea28dc1a50844255a2c8ecf866880ee8b0b22c217de"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "d1471c2f21a9736ede64c8c1aa7cfa861655b9f23a25a6c6081da503c252ef49",
+      "repositorySha256": "d1471c2f21a9736ede64c8c1aa7cfa861655b9f23a25a6c6081da503c252ef49"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "520d6ff434066908833795ab5f406bd0222b10b1101ae53d2856ba327f2393e6",
+      "repositorySha256": "520d6ff434066908833795ab5f406bd0222b10b1101ae53d2856ba327f2393e6"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b",
+      "repositorySha256": "2406c5fea36ca2e960fb7d7da32cd18b481521b4f67986a4af1f122dbf4c024b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/main.py",
+      "sourceSha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd",
+      "repositorySha256": "37f83a2118f84edd8bfb6668fedce8918c6be318e8c7a78c05a3936f7a561acd"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89",
+      "repositorySha256": "036d8a1008d28cd941f8d5522271cc8206b6b1801d638f6f85d994c241efdb89"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/runtime/progress.py",
+      "sourceSha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef",
+      "repositorySha256": "7339d413a2a30fedd00dd07552849274f19ef0ccf38bf2b73a87ca7db34d1eef"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501",
+      "repositorySha256": "6364b2a5b0e7296c42d2767891f79442bc1459b8a0cf54475de610671957c501"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "d8b8644a781fb27224193e30d1057bd764438186e7a28e94927ac90733aa21c9",
+      "repositorySha256": "d8b8644a781fb27224193e30d1057bd764438186e7a28e94927ac90733aa21c9"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "cdf2a4fc7d0b2adbf463d5efae2afef953e5e396dd0ee3441feafdb102f3daae",
+      "repositorySha256": "cdf2a4fc7d0b2adbf463d5efae2afef953e5e396dd0ee3441feafdb102f3daae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/pyproject.toml",
+      "sourceSha256": "3435cb1bfdc98c1a43e3a35113995a913c491890d18045cbb7301bae3e0d2881",
+      "repositorySha256": "3435cb1bfdc98c1a43e3a35113995a913c491890d18045cbb7301bae3e0d2881"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/requirements.txt",
+      "sourceSha256": "85b269a8af32bea53b4750011201523f2ad6f72ee155f381a170e9f2843fa038",
+      "repositorySha256": "85b269a8af32bea53b4750011201523f2ad6f72ee155f381a170e9f2843fa038"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/files/uv.lock",
+      "sourceSha256": "0778743ae69eddca27aca9275be9326698b573d190b5a0d0287eb29dd0168ae0",
+      "repositorySha256": "0778743ae69eddca27aca9275be9326698b573d190b5a0d0287eb29dd0168ae0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.19.0/provenance.json",
+      "sourceSha256": "45374b6512401e40d185739f8f4eea8606cd1d983e77b2652d7a9327f7461b74",
+      "repositorySha256": "45374b6512401e40d185739f8f4eea8606cd1d983e77b2652d7a9327f7461b74"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/baseline-manifest.json",
+      "sourceSha256": "66e3b4442bf06370ad66dd178f268af93144514bb02d1b8a7cb775f6f08e9f8d",
+      "repositorySha256": "66e3b4442bf06370ad66dd178f268af93144514bb02d1b8a7cb775f6f08e9f8d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/README.md",
+      "sourceSha256": "c4564c43c93c8e554ab43d371275cb3d39f6bb61be988f7788eb8fa8c1bfdd57",
+      "repositorySha256": "c4564c43c93c8e554ab43d371275cb3d39f6bb61be988f7788eb8fa8c1bfdd57"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/__init__.py",
+      "sourceSha256": "f0d4f9a946bf51ffefd71d48410ae0e00d7fa3475be1267bc6cbe76adae5822e",
+      "repositorySha256": "f0d4f9a946bf51ffefd71d48410ae0e00d7fa3475be1267bc6cbe76adae5822e"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/agent_tool/__init__.py",
+      "sourceSha256": "f3b192c4f3ed25f3a83b19cc04b66d37a41182e8947a340b91f393358c2dfa12",
+      "repositorySha256": "f3b192c4f3ed25f3a83b19cc04b66d37a41182e8947a340b91f393358c2dfa12"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/agent_tool/inference.py",
+      "sourceSha256": "1206082189b2c101660b825e0c08a238dcd431caa92f59bf0a0a8ff6f6a0ee12",
+      "repositorySha256": "1206082189b2c101660b825e0c08a238dcd431caa92f59bf0a0a8ff6f6a0ee12"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/agent_tool/manifest.json",
+      "sourceSha256": "7e549263a2d010241d63054c002befda610178155a3ca137c1cf90b915adb25f",
+      "repositorySha256": "7e549263a2d010241d63054c002befda610178155a3ca137c1cf90b915adb25f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/config.py",
+      "sourceSha256": "c50dc652f74c39b7c3b71d033f875a3b12e9d803dcd66a2ea4cb4247f56d264c",
+      "repositorySha256": "c50dc652f74c39b7c3b71d033f875a3b12e9d803dcd66a2ea4cb4247f56d264c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/config.toml",
+      "sourceSha256": "006721693326340236cf22100a768118c7156780db1f6a62c1857778a0ad2b4d",
+      "repositorySha256": "006721693326340236cf22100a768118c7156780db1f6a62c1857778a0ad2b4d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "1708c248ba9b7a249fdbe260b8687d96112d001dfb09cc73eac0f457532e22c8",
+      "repositorySha256": "1708c248ba9b7a249fdbe260b8687d96112d001dfb09cc73eac0f457532e22c8"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "005bb34388c288b858436129b86c924bf92b80e1199203d4495785e1c2182467",
+      "repositorySha256": "005bb34388c288b858436129b86c924bf92b80e1199203d4495785e1c2182467"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "71b1e93f28a2e93e09f0e82f63401dc411aae39c0c30328ad91ed71c38d8eb5f",
+      "repositorySha256": "71b1e93f28a2e93e09f0e82f63401dc411aae39c0c30328ad91ed71c38d8eb5f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/federated_learning/parameters.py",
+      "sourceSha256": "14596cbd3473b5ffeeb8a15211bf8ffde75a1813257ecdb84cc4d63c4c842610",
+      "repositorySha256": "14596cbd3473b5ffeeb8a15211bf8ffde75a1813257ecdb84cc4d63c4c842610"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "7a6569ea091fe262a05d782e7b9bb53487ca912356c6b83b26700b3d41976589",
+      "repositorySha256": "7a6569ea091fe262a05d782e7b9bb53487ca912356c6b83b26700b3d41976589"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "947de39ff2e15148d642ea7c1e95120abe7eef5b1d1c1a20531a8427b1035447",
+      "repositorySha256": "947de39ff2e15148d642ea7c1e95120abe7eef5b1d1c1a20531a8427b1035447"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "5cf930ace6f89946fd84731e4286fdacd560dfdc080d0a474e96991dda4a3aae",
+      "repositorySha256": "5cf930ace6f89946fd84731e4286fdacd560dfdc080d0a474e96991dda4a3aae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/local_training/train.py",
+      "sourceSha256": "4f71b4fabf61f16597474de078dbbfd0e41a107ecc974ec3a8a39c7c230e58c6",
+      "repositorySha256": "4f71b4fabf61f16597474de078dbbfd0e41a107ecc974ec3a8a39c7c230e58c6"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/main.py",
+      "sourceSha256": "df10dec95ae5ee28640efbcf7d2bd05e218f2e89ef2e51b44990cc6cd49f76f8",
+      "repositorySha256": "df10dec95ae5ee28640efbcf7d2bd05e218f2e89ef2e51b44990cc6cd49f76f8"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "28dbd3f97c4a1a750d40e0572653699f1b69b496881ffbff81bde633b9214b34",
+      "repositorySha256": "28dbd3f97c4a1a750d40e0572653699f1b69b496881ffbff81bde633b9214b34"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "90518d477b3529bac55e8a4e4ba8e3ec50eb18b818d7795aa8c5f773a9dde5fc",
+      "repositorySha256": "90518d477b3529bac55e8a4e4ba8e3ec50eb18b818d7795aa8c5f773a9dde5fc"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/model_release/manifest.json",
+      "sourceSha256": "6a998d973463dd0c840dc99ec5a5da2a5b5c613edab6688e678f5ca48f541fd6",
+      "repositorySha256": "6a998d973463dd0c840dc99ec5a5da2a5b5c613edab6688e678f5ca48f541fd6"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/pyproject.toml",
+      "sourceSha256": "e7a915e2bab7cb9199ce4a9378dacd98860f80c4a1c50590048c22fad3bcb666",
+      "repositorySha256": "e7a915e2bab7cb9199ce4a9378dacd98860f80c4a1c50590048c22fad3bcb666"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/files/uv.lock",
+      "sourceSha256": "74a912f4d6f7f376dbcc48031adef96c63f76c45f90bec8f428505c91025ce4e",
+      "repositorySha256": "74a912f4d6f7f376dbcc48031adef96c63f76c45f90bec8f428505c91025ce4e"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.3.0/provenance.json",
+      "sourceSha256": "f37c9796efec32ce09052f6bca1c8a37fdcaecf0aa8fef09c3b3c87e6d68dbf6",
+      "repositorySha256": "f37c9796efec32ce09052f6bca1c8a37fdcaecf0aa8fef09c3b3c87e6d68dbf6"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/baseline-manifest.json",
+      "sourceSha256": "0b78ef33adb37f92826985f722f20e8dfae8673c08e20eaf3f5aa9d620447930",
+      "repositorySha256": "0b78ef33adb37f92826985f722f20e8dfae8673c08e20eaf3f5aa9d620447930"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/README.md",
+      "sourceSha256": "3673dbe6cbeddd89c847eaaf2042c4426795306c0b59e4e69c5a625d6d1b76d0",
+      "repositorySha256": "3673dbe6cbeddd89c847eaaf2042c4426795306c0b59e4e69c5a625d6d1b76d0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/__init__.py",
+      "sourceSha256": "24a7bfc97f94afb6cf84597413bbdb90825505562036ebe2c69804bcbda3b634",
+      "repositorySha256": "24a7bfc97f94afb6cf84597413bbdb90825505562036ebe2c69804bcbda3b634"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/client_main.py",
+      "sourceSha256": "210bd23dc35f0c637e1961abe6c8b1570333b4e97b7d3fcf835101ed5287bf58",
+      "repositorySha256": "210bd23dc35f0c637e1961abe6c8b1570333b4e97b7d3fcf835101ed5287bf58"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/client_manager_main.py",
+      "sourceSha256": "1d1b5ca64e0912416dd8f2c2aa267f8dc285e91b071b1a2fabe319e004caa5c0",
+      "repositorySha256": "1d1b5ca64e0912416dd8f2c2aa267f8dc285e91b071b1a2fabe319e004caa5c0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "d73062c494f9533c8b32eaaef196aef0eff67487612e5543487b3865dadc05af",
+      "repositorySha256": "d73062c494f9533c8b32eaaef196aef0eff67487612e5543487b3865dadc05af"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/config.py",
+      "sourceSha256": "a8f3d2d14a8d64ca111f895a04017c90256d91f3a3b02adfd82aecc02c0d5cc1",
+      "repositorySha256": "a8f3d2d14a8d64ca111f895a04017c90256d91f3a3b02adfd82aecc02c0d5cc1"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/data_preparation.py",
+      "sourceSha256": "d916d6269e92924068607c53ea015e5d06fe1eb54d8a63493cf1e915816d3f01",
+      "repositorySha256": "d916d6269e92924068607c53ea015e5d06fe1eb54d8a63493cf1e915816d3f01"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/main.py",
+      "sourceSha256": "58bc1d783d85ec281d348364fc77eb12bea03bd13e5223458d1d0a8160b7ee00",
+      "repositorySha256": "58bc1d783d85ec281d348364fc77eb12bea03bd13e5223458d1d0a8160b7ee00"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/manifest.json",
+      "sourceSha256": "461a995d4eecdffae6cb51ae362794cb8bdb4b167a49683e4c169aa65332f9f7",
+      "repositorySha256": "461a995d4eecdffae6cb51ae362794cb8bdb4b167a49683e4c169aa65332f9f7"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/model.py",
+      "sourceSha256": "5a0421b4f5bafcdc170bf48c1a5e5e6392a07e9937e28b3aaed9dca37d6d858d",
+      "repositorySha256": "5a0421b4f5bafcdc170bf48c1a5e5e6392a07e9937e28b3aaed9dca37d6d858d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/server_main.py",
+      "sourceSha256": "48c9b752704d052f49c492c2b33c066cdeed00f689301ec0785351eebeff4a8e",
+      "repositorySha256": "48c9b752704d052f49c492c2b33c066cdeed00f689301ec0785351eebeff4a8e"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/task_check.py",
+      "sourceSha256": "c7e2e4a298e50cf02a1b6c437d9acad9f740d8ab8efca561fb63dcafe25a6e2a",
+      "repositorySha256": "c7e2e4a298e50cf02a1b6c437d9acad9f740d8ab8efca561fb63dcafe25a6e2a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/tool.py",
+      "sourceSha256": "6aa309ecd0e911e72da9d8723b5ad935b09422f3550b19b2b6d3b58fbcd93314",
+      "repositorySha256": "6aa309ecd0e911e72da9d8723b5ad935b09422f3550b19b2b6d3b58fbcd93314"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/federated_task/training.py",
+      "sourceSha256": "7085530ca8058f36c972d1069e0619086efb2d9529ea3e845c1e1e7cfcbc07d6",
+      "repositorySha256": "7085530ca8058f36c972d1069e0619086efb2d9529ea3e845c1e1e7cfcbc07d6"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/model_release/manifest.json",
+      "sourceSha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b",
+      "repositorySha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/pyproject.toml",
+      "sourceSha256": "56a7793212451c1d88d0f8603fbe48656149c8614ad68d51c2555b6f96173b25",
+      "repositorySha256": "56a7793212451c1d88d0f8603fbe48656149c8614ad68d51c2555b6f96173b25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/files/uv.lock",
+      "sourceSha256": "d21c8baae3644d97df7aef03898c7865e6058ce619b5dafbf61f5d0659727106",
+      "repositorySha256": "d21c8baae3644d97df7aef03898c7865e6058ce619b5dafbf61f5d0659727106"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.4.0/provenance.json",
+      "sourceSha256": "ad5d21a3d32e2cf547c9e140e2361e3629e0e4909e539c42e3d6493277f13b18",
+      "repositorySha256": "ad5d21a3d32e2cf547c9e140e2361e3629e0e4909e539c42e3d6493277f13b18"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/baseline-manifest.json",
+      "sourceSha256": "451e0207b6251fabf724936a974025b740c829cc83b19ab70e122550af767751",
+      "repositorySha256": "451e0207b6251fabf724936a974025b740c829cc83b19ab70e122550af767751"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/README.md",
+      "sourceSha256": "22e8981ddc429be79366f47375f6bf63bb5f98c299e0537fc42309826b4b6c22",
+      "repositorySha256": "22e8981ddc429be79366f47375f6bf63bb5f98c299e0537fc42309826b4b6c22"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/__init__.py",
+      "sourceSha256": "b7421cb389ebea46e4fc1aa89a144c7cb228b0c195c6dfec1ec1c647168ae976",
+      "repositorySha256": "b7421cb389ebea46e4fc1aa89a144c7cb228b0c195c6dfec1ec1c647168ae976"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/client_main.py",
+      "sourceSha256": "210bd23dc35f0c637e1961abe6c8b1570333b4e97b7d3fcf835101ed5287bf58",
+      "repositorySha256": "210bd23dc35f0c637e1961abe6c8b1570333b4e97b7d3fcf835101ed5287bf58"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/client_manager_main.py",
+      "sourceSha256": "1d1b5ca64e0912416dd8f2c2aa267f8dc285e91b071b1a2fabe319e004caa5c0",
+      "repositorySha256": "1d1b5ca64e0912416dd8f2c2aa267f8dc285e91b071b1a2fabe319e004caa5c0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "87bcdb141fa4c80324794b8ebb8b156bbd18f7c931e2b5a3350c3eebdf8cb866",
+      "repositorySha256": "87bcdb141fa4c80324794b8ebb8b156bbd18f7c931e2b5a3350c3eebdf8cb866"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/config.py",
+      "sourceSha256": "71efc34b004f1d145b538f7ccd78c3acce18195ae81ea4aed16065cb1f8d1b01",
+      "repositorySha256": "71efc34b004f1d145b538f7ccd78c3acce18195ae81ea4aed16065cb1f8d1b01"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/data_preparation.py",
+      "sourceSha256": "2cf38156998d2c2dd6393cd4d1048bf5470f0fa4fdeedad5603bab2ae4662c0d",
+      "repositorySha256": "2cf38156998d2c2dd6393cd4d1048bf5470f0fa4fdeedad5603bab2ae4662c0d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/main.py",
+      "sourceSha256": "a0d28eedabd2c03d792620530c8cf9275023e34542360f346a546c951556a225",
+      "repositorySha256": "a0d28eedabd2c03d792620530c8cf9275023e34542360f346a546c951556a225"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/manifest.json",
+      "sourceSha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1",
+      "repositorySha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/model.py",
+      "sourceSha256": "6e3149decd028b44911f804ac07b05e18b0f48dd6e714b137b2846e401b2ca25",
+      "repositorySha256": "6e3149decd028b44911f804ac07b05e18b0f48dd6e714b137b2846e401b2ca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/server_main.py",
+      "sourceSha256": "0557e9b9843d86e3105a3c1b9788ea03b1eb69c4ea4d47306ae455a9014fcd86",
+      "repositorySha256": "0557e9b9843d86e3105a3c1b9788ea03b1eb69c4ea4d47306ae455a9014fcd86"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/task_check.py",
+      "sourceSha256": "78606ed8235eaf0df482f2fae5400acd86a0daecd66592eefc669bba3f6553e8",
+      "repositorySha256": "78606ed8235eaf0df482f2fae5400acd86a0daecd66592eefc669bba3f6553e8"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/tool.py",
+      "sourceSha256": "f539ac38a1c9b84d045b79e8eab59a3c51d9dbec4917575f7e7ff62bb7c95a79",
+      "repositorySha256": "f539ac38a1c9b84d045b79e8eab59a3c51d9dbec4917575f7e7ff62bb7c95a79"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/federated_task/training.py",
+      "sourceSha256": "4542c33ca84e2fb5203ff4e1f3a686e7d9a2dcc167e088aec327fc7f2b42ee16",
+      "repositorySha256": "4542c33ca84e2fb5203ff4e1f3a686e7d9a2dcc167e088aec327fc7f2b42ee16"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/model_release/manifest.json",
+      "sourceSha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b",
+      "repositorySha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/pyproject.toml",
+      "sourceSha256": "5eae85eac952297ebcc3e938c086a73f400ef38475548465b5ade4d3531202ca",
+      "repositorySha256": "5eae85eac952297ebcc3e938c086a73f400ef38475548465b5ade4d3531202ca"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/files/uv.lock",
+      "sourceSha256": "35044c52969dee0b091fb30af17d90158cbdfa603b5fc6658448bdc96f0b5c6d",
+      "repositorySha256": "35044c52969dee0b091fb30af17d90158cbdfa603b5fc6658448bdc96f0b5c6d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.5.0/provenance.json",
+      "sourceSha256": "19a1a6167c647cef04dbd9e3bd7d9aaf4c1951c4a246904378ed84e24daedd12",
+      "repositorySha256": "19a1a6167c647cef04dbd9e3bd7d9aaf4c1951c4a246904378ed84e24daedd12"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/baseline-manifest.json",
+      "sourceSha256": "5e9adfb3750a8f8125e732e91ce85651118d0b0890aa9b5b2b1461052276e13f",
+      "repositorySha256": "5e9adfb3750a8f8125e732e91ce85651118d0b0890aa9b5b2b1461052276e13f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/README.md",
+      "sourceSha256": "57c354496bb99db8088d83fb5d6b347e34bfffd33422ca5873a956e58b57e3a9",
+      "repositorySha256": "57c354496bb99db8088d83fb5d6b347e34bfffd33422ca5873a956e58b57e3a9"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/__init__.py",
+      "sourceSha256": "c091f60aaa103bace4d60b0561958546e282087b0ce55edbe1ac096dc05c97df",
+      "repositorySha256": "c091f60aaa103bace4d60b0561958546e282087b0ce55edbe1ac096dc05c97df"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/client_main.py",
+      "sourceSha256": "e71802403c819adb113fff221eab55bac090b984a80bc232396a20b987cabe98",
+      "repositorySha256": "e71802403c819adb113fff221eab55bac090b984a80bc232396a20b987cabe98"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "a0461dbbe756705dc6f0e6719a84424456328e52bb7617130c115ba9c0c0eac1",
+      "repositorySha256": "a0461dbbe756705dc6f0e6719a84424456328e52bb7617130c115ba9c0c0eac1"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/config.py",
+      "sourceSha256": "01d2ced595d1a463eee582d82d7b3ca5bbf68cb76c85b4ba770f8bd9882bbedb",
+      "repositorySha256": "01d2ced595d1a463eee582d82d7b3ca5bbf68cb76c85b4ba770f8bd9882bbedb"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/data_preparation.py",
+      "sourceSha256": "54d2dbf9cd6bcc845f302e50b528cef2ae3f6d0160bbb0ab39a4c548f13a0cae",
+      "repositorySha256": "54d2dbf9cd6bcc845f302e50b528cef2ae3f6d0160bbb0ab39a4c548f13a0cae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/main.py",
+      "sourceSha256": "bdc7e30e5138940808afbc00d761891b631edc2c013fe78fb70415de59d43e55",
+      "repositorySha256": "bdc7e30e5138940808afbc00d761891b631edc2c013fe78fb70415de59d43e55"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/manifest.json",
+      "sourceSha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1",
+      "repositorySha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/model.py",
+      "sourceSha256": "c3565fe1600294b616876c4ca8d4ec6d2f4ebdf20f2c4d6187b29067dcab5aec",
+      "repositorySha256": "c3565fe1600294b616876c4ca8d4ec6d2f4ebdf20f2c4d6187b29067dcab5aec"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/server_main.py",
+      "sourceSha256": "641d38a6cbc9c1bd33a6894402a427ff61653d0afda74e093be82652033bae35",
+      "repositorySha256": "641d38a6cbc9c1bd33a6894402a427ff61653d0afda74e093be82652033bae35"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/task_check.py",
+      "sourceSha256": "9573138b37274089cb68038e214c055d2059fcaaca98e236f225a73f224812d0",
+      "repositorySha256": "9573138b37274089cb68038e214c055d2059fcaaca98e236f225a73f224812d0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/tool.py",
+      "sourceSha256": "c40d7f532050e86b4505b90a79926bf85e339380edf33792bc46cb227d0b1405",
+      "repositorySha256": "c40d7f532050e86b4505b90a79926bf85e339380edf33792bc46cb227d0b1405"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/federated_task/training.py",
+      "sourceSha256": "b9454e2d8a52a4de5de69e232a5c4e2c736352d983474634834130f58150742c",
+      "repositorySha256": "b9454e2d8a52a4de5de69e232a5c4e2c736352d983474634834130f58150742c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/model_release/manifest.json",
+      "sourceSha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b",
+      "repositorySha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/pyproject.toml",
+      "sourceSha256": "8c980052e304277e48d968f3b3a63e3223db0db5318fe94d2ae58d91382f5e6b",
+      "repositorySha256": "8c980052e304277e48d968f3b3a63e3223db0db5318fe94d2ae58d91382f5e6b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/files/uv.lock",
+      "sourceSha256": "9674b1616e59c97b0e2baa188b662cf4ef5339f9235b642ba21f680e80410b72",
+      "repositorySha256": "9674b1616e59c97b0e2baa188b662cf4ef5339f9235b642ba21f680e80410b72"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.6.0/provenance.json",
+      "sourceSha256": "646b340c9a4a57afcf18e6be183bbd19712e65f7238cf1abf487a8443acaaf4f",
+      "repositorySha256": "646b340c9a4a57afcf18e6be183bbd19712e65f7238cf1abf487a8443acaaf4f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/baseline-manifest.json",
+      "sourceSha256": "1431d3909de1974e466548f698288ec08514c90c4ca6e117dde8becbc8c7e199",
+      "repositorySha256": "1431d3909de1974e466548f698288ec08514c90c4ca6e117dde8becbc8c7e199"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/README.md",
+      "sourceSha256": "57c354496bb99db8088d83fb5d6b347e34bfffd33422ca5873a956e58b57e3a9",
+      "repositorySha256": "57c354496bb99db8088d83fb5d6b347e34bfffd33422ca5873a956e58b57e3a9"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/__init__.py",
+      "sourceSha256": "26dab485d0ecd826635e0a300247957ee045698e366db36262393774ec479e1c",
+      "repositorySha256": "26dab485d0ecd826635e0a300247957ee045698e366db36262393774ec479e1c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/client_main.py",
+      "sourceSha256": "e71802403c819adb113fff221eab55bac090b984a80bc232396a20b987cabe98",
+      "repositorySha256": "e71802403c819adb113fff221eab55bac090b984a80bc232396a20b987cabe98"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "1186df44d105c1dfcda652af16395b03a4e79117de2f7d369ec88cc828e77a65",
+      "repositorySha256": "1186df44d105c1dfcda652af16395b03a4e79117de2f7d369ec88cc828e77a65"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/config.py",
+      "sourceSha256": "176bf712c38d47fe8dda9510b4394fd0201f623f339dbef50055e44a73b3d379",
+      "repositorySha256": "176bf712c38d47fe8dda9510b4394fd0201f623f339dbef50055e44a73b3d379"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/data_preparation.py",
+      "sourceSha256": "54d2dbf9cd6bcc845f302e50b528cef2ae3f6d0160bbb0ab39a4c548f13a0cae",
+      "repositorySha256": "54d2dbf9cd6bcc845f302e50b528cef2ae3f6d0160bbb0ab39a4c548f13a0cae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/main.py",
+      "sourceSha256": "313d08530ea6a5cf67a170aa5945f924057683d5a8d41db8ed0c47c12d3cf34d",
+      "repositorySha256": "313d08530ea6a5cf67a170aa5945f924057683d5a8d41db8ed0c47c12d3cf34d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/manifest.json",
+      "sourceSha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1",
+      "repositorySha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/model.py",
+      "sourceSha256": "c3565fe1600294b616876c4ca8d4ec6d2f4ebdf20f2c4d6187b29067dcab5aec",
+      "repositorySha256": "c3565fe1600294b616876c4ca8d4ec6d2f4ebdf20f2c4d6187b29067dcab5aec"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/server_main.py",
+      "sourceSha256": "641d38a6cbc9c1bd33a6894402a427ff61653d0afda74e093be82652033bae35",
+      "repositorySha256": "641d38a6cbc9c1bd33a6894402a427ff61653d0afda74e093be82652033bae35"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/task_check.py",
+      "sourceSha256": "9573138b37274089cb68038e214c055d2059fcaaca98e236f225a73f224812d0",
+      "repositorySha256": "9573138b37274089cb68038e214c055d2059fcaaca98e236f225a73f224812d0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/tool.py",
+      "sourceSha256": "c40d7f532050e86b4505b90a79926bf85e339380edf33792bc46cb227d0b1405",
+      "repositorySha256": "c40d7f532050e86b4505b90a79926bf85e339380edf33792bc46cb227d0b1405"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/federated_task/training.py",
+      "sourceSha256": "b9454e2d8a52a4de5de69e232a5c4e2c736352d983474634834130f58150742c",
+      "repositorySha256": "b9454e2d8a52a4de5de69e232a5c4e2c736352d983474634834130f58150742c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/model_release/manifest.json",
+      "sourceSha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b",
+      "repositorySha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/pyproject.toml",
+      "sourceSha256": "ef37a2bea36b7f31ecc5e7fbe0469ad2ee881287eac5ae3d2e1a61848e1426b7",
+      "repositorySha256": "ef37a2bea36b7f31ecc5e7fbe0469ad2ee881287eac5ae3d2e1a61848e1426b7"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/files/uv.lock",
+      "sourceSha256": "3412703ea9f01a3f8a780993c6b63637d561f26cb413b1e3c1acd330d3eb11e8",
+      "repositorySha256": "3412703ea9f01a3f8a780993c6b63637d561f26cb413b1e3c1acd330d3eb11e8"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.7.0/provenance.json",
+      "sourceSha256": "02b84c62ec51804e01e02e43359379abb70fd2c713f567061b91cd4ad12c96b7",
+      "repositorySha256": "02b84c62ec51804e01e02e43359379abb70fd2c713f567061b91cd4ad12c96b7"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/baseline-manifest.json",
+      "sourceSha256": "abe4ff9fa25ab1e9bd3d2a419070e2d2985185e8f2bec4295c91863a300c62e3",
+      "repositorySha256": "abe4ff9fa25ab1e9bd3d2a419070e2d2985185e8f2bec4295c91863a300c62e3"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/README.md",
+      "sourceSha256": "18ec2b9a24981f1f0a396b984c3c2314d9f607776e195991f655b551b53d81fb",
+      "repositorySha256": "18ec2b9a24981f1f0a396b984c3c2314d9f607776e195991f655b551b53d81fb"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/__init__.py",
+      "sourceSha256": "26dab485d0ecd826635e0a300247957ee045698e366db36262393774ec479e1c",
+      "repositorySha256": "26dab485d0ecd826635e0a300247957ee045698e366db36262393774ec479e1c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/client_main.py",
+      "sourceSha256": "e71802403c819adb113fff221eab55bac090b984a80bc232396a20b987cabe98",
+      "repositorySha256": "e71802403c819adb113fff221eab55bac090b984a80bc232396a20b987cabe98"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "4877cef06fb71ade07f76f4b76ea59957b3d4aaa9b06210dd3d6c310a7d15dd3",
+      "repositorySha256": "4877cef06fb71ade07f76f4b76ea59957b3d4aaa9b06210dd3d6c310a7d15dd3"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/config.py",
+      "sourceSha256": "3f74bdf5040897b485070750415784160e0a389bc4f3058ed23ad76871476060",
+      "repositorySha256": "3f74bdf5040897b485070750415784160e0a389bc4f3058ed23ad76871476060"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/data_preparation.py",
+      "sourceSha256": "54d2dbf9cd6bcc845f302e50b528cef2ae3f6d0160bbb0ab39a4c548f13a0cae",
+      "repositorySha256": "54d2dbf9cd6bcc845f302e50b528cef2ae3f6d0160bbb0ab39a4c548f13a0cae"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/main.py",
+      "sourceSha256": "313d08530ea6a5cf67a170aa5945f924057683d5a8d41db8ed0c47c12d3cf34d",
+      "repositorySha256": "313d08530ea6a5cf67a170aa5945f924057683d5a8d41db8ed0c47c12d3cf34d"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/manifest.json",
+      "sourceSha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1",
+      "repositorySha256": "82019be7314c1f641bd7718c848d74849140eddb82fe337a62156bb18e0c72e1"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/model.py",
+      "sourceSha256": "c3565fe1600294b616876c4ca8d4ec6d2f4ebdf20f2c4d6187b29067dcab5aec",
+      "repositorySha256": "c3565fe1600294b616876c4ca8d4ec6d2f4ebdf20f2c4d6187b29067dcab5aec"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/server_main.py",
+      "sourceSha256": "148e177d48e854942169dbcd2f4f98198b0774638237c275da7e01f50ca5448f",
+      "repositorySha256": "148e177d48e854942169dbcd2f4f98198b0774638237c275da7e01f50ca5448f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/task_check.py",
+      "sourceSha256": "4aa5c40bb94c5d47181fe8b8ea9211abd6c2e6e2f3a8dd88ecfdfe066c432e83",
+      "repositorySha256": "4aa5c40bb94c5d47181fe8b8ea9211abd6c2e6e2f3a8dd88ecfdfe066c432e83"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/tool.py",
+      "sourceSha256": "c40d7f532050e86b4505b90a79926bf85e339380edf33792bc46cb227d0b1405",
+      "repositorySha256": "c40d7f532050e86b4505b90a79926bf85e339380edf33792bc46cb227d0b1405"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/federated_task/training.py",
+      "sourceSha256": "da575550924e31d08db522bf19d5e4f81f75a27d5d963581fec154972acd8346",
+      "repositorySha256": "da575550924e31d08db522bf19d5e4f81f75a27d5d963581fec154972acd8346"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/model_release/manifest.json",
+      "sourceSha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b",
+      "repositorySha256": "c3a67dca77286c352d2539e01ea2c5e69619e74e33545e51f8f62d3ff23eba9b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/pyproject.toml",
+      "sourceSha256": "e2f83aee55da79c30c7f48f66aab5ac6244181a9ecfa14446d00446d10bff08b",
+      "repositorySha256": "e2f83aee55da79c30c7f48f66aab5ac6244181a9ecfa14446d00446d10bff08b"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/files/uv.lock",
+      "sourceSha256": "1a62b819da47c7be853f415f000eea7c3ed24e1b1bf4ca56bfc21390f13a9485",
+      "repositorySha256": "1a62b819da47c7be853f415f000eea7c3ed24e1b1bf4ca56bfc21390f13a9485"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.8.0/provenance.json",
+      "sourceSha256": "872028afc8adb53e7830fa9c07608e69b98f6f64e1e80e425e6d9443aa2ebf27",
+      "repositorySha256": "872028afc8adb53e7830fa9c07608e69b98f6f64e1e80e425e6d9443aa2ebf27"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/baseline-manifest.json",
+      "sourceSha256": "28fd23334d2ee4b41ae7fbe11aba3f9faf087ba1e1ba3e0815e9309cbae00401",
+      "repositorySha256": "28fd23334d2ee4b41ae7fbe11aba3f9faf087ba1e1ba3e0815e9309cbae00401"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/LICENSE",
+      "sourceSha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "repositorySha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/README.md",
+      "sourceSha256": "74b19060ec68d988ee1f0be71edf4b19c217103a821724df05c55d5fc4015534",
+      "repositorySha256": "74b19060ec68d988ee1f0be71edf4b19c217103a821724df05c55d5fc4015534"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/__init__.py",
+      "sourceSha256": "1ff0cd06752062bc6fd0ba89da102791b697bcc8780079388f39def245f44438",
+      "repositorySha256": "1ff0cd06752062bc6fd0ba89da102791b697bcc8780079388f39def245f44438"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/conf/config.yaml",
+      "sourceSha256": "7e12acdae3ea3e5c5b170d9b370f94e62f79991a9883c841a2fb5f4466eaa716",
+      "repositorySha256": "7e12acdae3ea3e5c5b170d9b370f94e62f79991a9883c841a2fb5f4466eaa716"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/config.py",
+      "sourceSha256": "4fef04ba2b66fadd348572e9427b2d5643e29ef28ba6c5e5e01d2b654862e3d9",
+      "repositorySha256": "4fef04ba2b66fadd348572e9427b2d5643e29ef28ba6c5e5e01d2b654862e3d9"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/federated_learning/__init__.py",
+      "sourceSha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774",
+      "repositorySha256": "93e58d26c78751e4cabb2565e833696fc7125fd036c3c1cf3b5b787967363774"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/federated_learning/client_main.py",
+      "sourceSha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a",
+      "repositorySha256": "68b06ff8f904a4fe1e9e6d67dac1ad0d488fd08028da08bb91dcffad44983a0a"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/federated_learning/client_manager_main.py",
+      "sourceSha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95",
+      "repositorySha256": "0a5dee7e6f4fae235ab4a03226091e88d8c0ba395121d7be9c74408a67de8d95"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/federated_learning/server_main.py",
+      "sourceSha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c",
+      "repositorySha256": "4f6ef6604e31e15018b3a9ff69d5aabdcb575d08c9a8a85f269ed666a1acbb5c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/local_training/__init__.py",
+      "sourceSha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0",
+      "repositorySha256": "bde7e90321b8b9d9b9727b602fac1528787a84103680d197cb88fbe995f3dcc0"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/local_training/data_preparation.py",
+      "sourceSha256": "10a613860a5febd96b56f24e53b6d19c37bb0e4ea1eb83dda6bf3d94f4d2a3a7",
+      "repositorySha256": "10a613860a5febd96b56f24e53b6d19c37bb0e4ea1eb83dda6bf3d94f4d2a3a7"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/local_training/model.py",
+      "sourceSha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25",
+      "repositorySha256": "fc3881107882576df942254c6c64f645752975f992ac969f5cb279126a9cca25"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/local_training/training.py",
+      "sourceSha256": "2d85cdee15368e0ec4d452c625fcfce7c1f7695b98d0768e77c4709e4f47c99c",
+      "repositorySha256": "2d85cdee15368e0ec4d452c625fcfce7c1f7695b98d0768e77c4709e4f47c99c"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/main.py",
+      "sourceSha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535",
+      "repositorySha256": "3aa99316097f9fa509aeb2461dd089e1982ffa93173259185bf9269a78e43535"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/runtime/__init__.py",
+      "sourceSha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92",
+      "repositorySha256": "2955556df9ad21547bbd9dcda93e39e8af2b0eb0bf2194fca69339328048fd92"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/runtime/model_release.py",
+      "sourceSha256": "5c3c379df120623ba83a2a4fdcd921ebb47103be2e3fce5f5397d3ffa3b60a45",
+      "repositorySha256": "5c3c379df120623ba83a2a4fdcd921ebb47103be2e3fce5f5397d3ffa3b60a45"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/task_readiness/__init__.py",
+      "sourceSha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505",
+      "repositorySha256": "7b11913ec8c91e285449de3509e1e08647c38071108992640ee537862a0fa505"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/task_readiness/check.py",
+      "sourceSha256": "6306ab3986cb67be87a74ffdbe3dc1e858c406bb4ce7b030be9cec3a7c907857",
+      "repositorySha256": "6306ab3986cb67be87a74ffdbe3dc1e858c406bb4ce7b030be9cec3a7c907857"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/tool_ai/__init__.py",
+      "sourceSha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f",
+      "repositorySha256": "ea9ca80e8b9face2bedcc6b65355c03fa4bee3b5c4f1b2f9994deeaa6dc4029f"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/tool_ai/manifest.json",
+      "sourceSha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732",
+      "repositorySha256": "1f5eedc8c52c916652b48de6c64af0f2eb32de4c30fee4679205519c5c541732"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/federated_task/tool_ai/tool.py",
+      "sourceSha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5",
+      "repositorySha256": "271703e18ae263e38301c1d32c2071b6034c6e63b4fe77f53888b8a9d57990e5"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/model_release/manifest.json",
+      "sourceSha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2",
+      "repositorySha256": "363c3c66896ac200d40e8590e336f27c617acde6e356b9c6cf9540aeb98302e2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/pyproject.toml",
+      "sourceSha256": "7ec37486f0bfe0a72896379f5b0dba32cff551af5767e22da61df646df8311b2",
+      "repositorySha256": "7ec37486f0bfe0a72896379f5b0dba32cff551af5767e22da61df646df8311b2"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/files/uv.lock",
+      "sourceSha256": "381372f16101fd76beb144032b73f612b86a4f68d1dedbf2628856de7429a9c9",
+      "repositorySha256": "381372f16101fd76beb144032b73f612b86a4f68d1dedbf2628856de7429a9c9"
+    },
+    {
+      "path": "server/assets/federated-task-baseline/0.9.0/provenance.json",
+      "sourceSha256": "2b1ceac13e7564ebd351e088d9e23f03487318f7cf4896c484190d440e8ed225",
+      "repositorySha256": "2b1ceac13e7564ebd351e088d9e23f03487318f7cf4896c484190d440e8ed225"
+    },
+    {
+      "path": "server/jsconfig.json",
+      "sourceSha256": "d79f304952866fa542d1d46742cd05e6d8f54297c8c31e0e17e514cf930abafa",
+      "repositorySha256": "d79f304952866fa542d1d46742cd05e6d8f54297c8c31e0e17e514cf930abafa"
+    },
+    {
+      "path": "server/package-lock.json",
+      "sourceSha256": "dcd67d003dcb8c4d4e9c6bc90430f2b5a8d527a220a908a0eb89ac69475220a2",
+      "repositorySha256": "dcd67d003dcb8c4d4e9c6bc90430f2b5a8d527a220a908a0eb89ac69475220a2"
+    },
+    {
+      "path": "server/package.json",
+      "sourceSha256": "bec28b5b4c544f9025014e5fde3a9fd6de5430bde667850283bcfad85360be41",
+      "repositorySha256": "bec28b5b4c544f9025014e5fde3a9fd6de5430bde667850283bcfad85360be41"
+    },
+    {
+      "path": "server/scripts/audit-registry-artifacts.js",
+      "sourceSha256": "269842a2d0801cdf238718f1bcb16fbddaef679447b15b067c7efcdd79aa1a12",
+      "repositorySha256": "269842a2d0801cdf238718f1bcb16fbddaef679447b15b067c7efcdd79aa1a12"
+    },
+    {
+      "path": "server/scripts/migrate-legacy-handles.js",
+      "sourceSha256": "48aa56d27390825a20172a69e68527135e9f5d3a979296ec74f0ad907138a090",
+      "repositorySha256": "48aa56d27390825a20172a69e68527135e9f5d3a979296ec74f0ad907138a090"
+    },
+    {
+      "path": "server/scripts/migrate-task-access.js",
+      "sourceSha256": "8806f3f6dffe4bd74a903c5ecb2957863667ba797f23cf76e3510c2761bea14d",
+      "repositorySha256": "8806f3f6dffe4bd74a903c5ecb2957863667ba797f23cf76e3510c2761bea14d"
+    },
+    {
+      "path": "server/scripts/publish-baseline-template.js",
+      "sourceSha256": "152ec3bcbe604bb516abf5cb786b600a0069c98ed2af2429f412815600f7e4ea",
+      "repositorySha256": "152ec3bcbe604bb516abf5cb786b600a0069c98ed2af2429f412815600f7e4ea"
+    },
+    {
+      "path": "server/src/api/auth/auth.ctrl.js",
+      "sourceSha256": "b7857561725d71588117b33df2c01567bb90e7a4a9d80760afab19988ba0cbba",
+      "repositorySha256": "b7857561725d71588117b33df2c01567bb90e7a4a9d80760afab19988ba0cbba"
+    },
+    {
+      "path": "server/src/api/auth/index.js",
+      "sourceSha256": "1e00c333dc835b79008e1f0412b0976a4c4c677f7f7f0d18641c7225f100662c",
+      "repositorySha256": "1e00c333dc835b79008e1f0412b0976a4c4c677f7f7f0d18641c7225f100662c"
+    },
+    {
+      "path": "server/src/api/baselines/baselines.ctrl.js",
+      "sourceSha256": "225fb90b02ae69f7298e6a85ea6546d741d9f3b214eb7ef8eecdcb7583d38e8b",
+      "repositorySha256": "225fb90b02ae69f7298e6a85ea6546d741d9f3b214eb7ef8eecdcb7583d38e8b"
+    },
+    {
+      "path": "server/src/api/baselines/index.js",
+      "sourceSha256": "f1f6a9816bcdd5d6cfdc4336dabb8cacc51df0a184dfcb36c02652937bef9646",
+      "repositorySha256": "f1f6a9816bcdd5d6cfdc4336dabb8cacc51df0a184dfcb36c02652937bef9646"
+    },
+    {
+      "path": "server/src/api/blog/blog.ctrl.js",
+      "sourceSha256": "53b011b9e7a42f1dcf545ca5ae1c2e3d0d5f5857d414596f76598bb10cc50e57",
+      "repositorySha256": "53b011b9e7a42f1dcf545ca5ae1c2e3d0d5f5857d414596f76598bb10cc50e57"
+    },
+    {
+      "path": "server/src/api/blog/index.js",
+      "sourceSha256": "76169dffffc6d4b83ec91da24b874c7a2ae0b2c57370f41b191e73f7f3f62643",
+      "repositorySha256": "76169dffffc6d4b83ec91da24b874c7a2ae0b2c57370f41b191e73f7f3f62643"
+    },
+    {
+      "path": "server/src/api/count/count.ctrl.js",
+      "sourceSha256": "f6564dc84089a3e46e85526e92644a8eab7788baefb92d8154e2962cd04732a3",
+      "repositorySha256": "f6564dc84089a3e46e85526e92644a8eab7788baefb92d8154e2962cd04732a3"
+    },
+    {
+      "path": "server/src/api/count/index.js",
+      "sourceSha256": "dc6f4a1ce80a9e3a32ac062d5b862f46a5c3065169696acb2bae978ec862b268",
+      "repositorySha256": "dc6f4a1ce80a9e3a32ac062d5b862f46a5c3065169696acb2bae978ec862b268"
+    },
+    {
+      "path": "server/src/api/index.js",
+      "sourceSha256": "450e99389af07abdaa12805f9b38da95ac02d2b93aa3c568f0aff7f47b171fa8",
+      "repositorySha256": "450e99389af07abdaa12805f9b38da95ac02d2b93aa3c568f0aff7f47b171fa8"
+    },
+    {
+      "path": "server/src/api/model/index.js",
+      "sourceSha256": "6da3d25e05e7a19bd2dc31a1561fb6c5635209486f6ce43ce63ddc3f5d1db53b",
+      "repositorySha256": "6da3d25e05e7a19bd2dc31a1561fb6c5635209486f6ce43ce63ddc3f5d1db53b"
+    },
+    {
+      "path": "server/src/api/model/model.ctrl.js",
+      "sourceSha256": "62c3c4f307f6bcd4ed9715adc71fc01df0f7a92b7828d9c4cb3ea79d65f68c0c",
+      "repositorySha256": "62c3c4f307f6bcd4ed9715adc71fc01df0f7a92b7828d9c4cb3ea79d65f68c0c"
+    },
+    {
+      "path": "server/src/api/news/index.js",
+      "sourceSha256": "71905a9dd1df06cb834dd7c1ec8480a114fca0eee8aab0f8c834880416d147cd",
+      "repositorySha256": "71905a9dd1df06cb834dd7c1ec8480a114fca0eee8aab0f8c834880416d147cd"
+    },
+    {
+      "path": "server/src/api/news/news.ctrl.js",
+      "sourceSha256": "095522655cf37806a015c9c13c5dc4f9140b81a020388f663621fb34b254576b",
+      "repositorySha256": "095522655cf37806a015c9c13c5dc4f9140b81a020388f663621fb34b254576b"
+    },
+    {
+      "path": "server/src/api/realtime/index.js",
+      "sourceSha256": "09325da8697a2ea68a2ba0494fe7e1d8b609240fa123b941cc24e14df5ff62af",
+      "repositorySha256": "09325da8697a2ea68a2ba0494fe7e1d8b609240fa123b941cc24e14df5ff62af"
+    },
+    {
+      "path": "server/src/api/serverControl/index.js",
+      "sourceSha256": "cdd3b19ca9cf758e4b684894fa56b201f663641e440cdfd5e9e04e34061032b3",
+      "repositorySha256": "cdd3b19ca9cf758e4b684894fa56b201f663641e440cdfd5e9e04e34061032b3"
+    },
+    {
+      "path": "server/src/api/taskReleases/index.js",
+      "sourceSha256": "e38c46d5ec3a9879e9a942fa93504404b89b6dab8ebf7f09b606eaf9858be80b",
+      "repositorySha256": "e38c46d5ec3a9879e9a942fa93504404b89b6dab8ebf7f09b606eaf9858be80b"
+    },
+    {
+      "path": "server/src/api/taskReleases/taskReleases.ctrl.js",
+      "sourceSha256": "2faa733302080fb51caf2becf8e323a2779f09f5a6d541ad28759b1f3fa3f7ee",
+      "repositorySha256": "2faa733302080fb51caf2becf8e323a2779f09f5a6d541ad28759b1f3fa3f7ee"
+    },
+    {
+      "path": "server/src/api/tasks/index.js",
+      "sourceSha256": "9d7f33040da506843ecbfcf3f89f468604e038981b5ca4b7e6618378aa7f25a1",
+      "repositorySha256": "9d7f33040da506843ecbfcf3f89f468604e038981b5ca4b7e6618378aa7f25a1"
+    },
+    {
+      "path": "server/src/api/tasks/tasks.ctrl.js",
+      "sourceSha256": "0ff28f81a9eee37fb97b7cb67b2c3de5b6d8f11db5764f19cf1f18f14c268ad2",
+      "repositorySha256": "0ff28f81a9eee37fb97b7cb67b2c3de5b6d8f11db5764f19cf1f18f14c268ad2"
+    },
+    {
+      "path": "server/src/index.js",
+      "sourceSha256": "fb314c9871e6b6313b497b3c1b4de0dd40611fe06076f50dbfd5b2797a16ef26",
+      "repositorySha256": "fb314c9871e6b6313b497b3c1b4de0dd40611fe06076f50dbfd5b2797a16ef26"
+    },
+    {
+      "path": "server/src/integrations/registryApi.js",
+      "sourceSha256": "f006a892a25581816d329eae0edaefdd6862b17a621e1148b15094be38a720cb",
+      "repositorySha256": "f006a892a25581816d329eae0edaefdd6862b17a621e1148b15094be38a720cb"
+    },
+    {
+      "path": "server/src/lib/apiLogger.js",
+      "sourceSha256": "60c1876bbcae0bfd455a7c5156b3891032e6474835a53ed623a56e4d93152b49",
+      "repositorySha256": "60c1876bbcae0bfd455a7c5156b3891032e6474835a53ed623a56e4d93152b49"
+    },
+    {
+      "path": "server/src/lib/baselineTemplate.js",
+      "sourceSha256": "551986f459643bd38720906aa2fd0ae66da1c80ceb3dfc5daa8eef9a5d59fe9a",
+      "repositorySha256": "551986f459643bd38720906aa2fd0ae66da1c80ceb3dfc5daa8eef9a5d59fe9a"
+    },
+    {
+      "path": "server/src/lib/bundledBaseline.js",
+      "sourceSha256": "fe55ff10a66ce0ac895a8b53c30a2d9f7caa7ef423d55f45163752d8ab2d89c9",
+      "repositorySha256": "fe55ff10a66ce0ac895a8b53c30a2d9f7caa7ef423d55f45163752d8ab2d89c9"
+    },
+    {
+      "path": "server/src/lib/campaignCompletion.js",
+      "sourceSha256": "875371e2203035dcaa22dd0c6d489edea00e5aba01bfd9ccb66ef73516e5eebd",
+      "repositorySha256": "875371e2203035dcaa22dd0c6d489edea00e5aba01bfd9ccb66ef73516e5eebd"
+    },
+    {
+      "path": "server/src/lib/campaignConfig.js",
+      "sourceSha256": "cd7d697104244149488dbe5d038da9dd64bcd0bdf17e54cd6f5d99117309d6dc",
+      "repositorySha256": "cd7d697104244149488dbe5d038da9dd64bcd0bdf17e54cd6f5d99117309d6dc"
+    },
+    {
+      "path": "server/src/lib/checkLoggedIn.js",
+      "sourceSha256": "2891e8256be84e74d2aaf2c5b5d621a642f6a37db96367e1f6c3692145a2c5d3",
+      "repositorySha256": "2891e8256be84e74d2aaf2c5b5d621a642f6a37db96367e1f6c3692145a2c5d3"
+    },
+    {
+      "path": "server/src/lib/eventEmitter.js",
+      "sourceSha256": "be2d5cf455020106fbd2f713a53c0f6c8d5429152c05a7c33bb0679b2c69d709",
+      "repositorySha256": "be2d5cf455020106fbd2f713a53c0f6c8d5429152c05a7c33bb0679b2c69d709"
+    },
+    {
+      "path": "server/src/lib/jwtMiddleware.js",
+      "sourceSha256": "5dc079a56db1625067dd76e5d529b95d1902962fa91a678d79feec3683faf632",
+      "repositorySha256": "5dc079a56db1625067dd76e5d529b95d1902962fa91a678d79feec3683faf632"
+    },
+    {
+      "path": "server/src/lib/logger.js",
+      "sourceSha256": "8855a586c65eed98e299f925af368e2da20cfc2d0f84322a7e4484c36706a784",
+      "repositorySha256": "8855a586c65eed98e299f925af368e2da20cfc2d0f84322a7e4484c36706a784"
+    },
+    {
+      "path": "server/src/lib/releaseEvaluation.js",
+      "sourceSha256": "c459cdd1f5b2b4c0ac6dcb074c0b8088d3c9809a62dd26064b5b44b1ae8d419e",
+      "repositorySha256": "c459cdd1f5b2b4c0ac6dcb074c0b8088d3c9809a62dd26064b5b44b1ae8d419e"
+    },
+    {
+      "path": "server/src/lib/runtimeArtifactToken.js",
+      "sourceSha256": "8989d968a8fb52c91a6be3780153bd272d0f5e245c38a3f1c2f81debce29b296",
+      "repositorySha256": "8989d968a8fb52c91a6be3780153bd272d0f5e245c38a3f1c2f81debce29b296"
+    },
+    {
+      "path": "server/src/lib/runtimeCreationGuard.js",
+      "sourceSha256": "65656ab7dd9c5301626edb69e0d7a246ce02c709ffd2a50793f6d210e1c56ad8",
+      "repositorySha256": "65656ab7dd9c5301626edb69e0d7a246ce02c709ffd2a50793f6d210e1c56ad8"
+    },
+    {
+      "path": "server/src/lib/serverStartCommand.js",
+      "sourceSha256": "4a8296476070d853cba9b8d08c3376820e99ba2659df7656083aa1cc706649a2",
+      "repositorySha256": "4a8296476070d853cba9b8d08c3376820e99ba2659df7656083aa1cc706649a2"
+    },
+    {
+      "path": "server/src/lib/slugs.js",
+      "sourceSha256": "aa3d439bbf6f2c9d007d48bc42f3453f81381a452f3b2baf12a72037c8d6aabb",
+      "repositorySha256": "aa3d439bbf6f2c9d007d48bc42f3453f81381a452f3b2baf12a72037c8d6aabb"
+    },
+    {
+      "path": "server/src/lib/socketAuth.js",
+      "sourceSha256": "da0d79473f88132a0f44e12369cfa0b14567e31fbd2f43737ed5f75f76099839",
+      "repositorySha256": "da0d79473f88132a0f44e12369cfa0b14567e31fbd2f43737ed5f75f76099839"
+    },
+    {
+      "path": "server/src/lib/taskAccess.js",
+      "sourceSha256": "913b41da480d79ee42eddb643cb38816d135eacfc73c4f6f722ae24e004e18ab",
+      "repositorySha256": "913b41da480d79ee42eddb643cb38816d135eacfc73c4f6f722ae24e004e18ab"
+    },
+    {
+      "path": "server/src/lib/taskActivity.js",
+      "sourceSha256": "c44415d0122ff6769fdf06400168817e3ba4cde00b52b4f5e29c92f6a0aab6cf",
+      "repositorySha256": "c44415d0122ff6769fdf06400168817e3ba4cde00b52b4f5e29c92f6a0aab6cf"
+    },
+    {
+      "path": "server/src/lib/taskCard.js",
+      "sourceSha256": "0df2b2ad886f73b4f14a2ad4e457e24a1e2eb9d2c0c1c7f2e356dc5450d71a2b",
+      "repositorySha256": "0df2b2ad886f73b4f14a2ad4e457e24a1e2eb9d2c0c1c7f2e356dc5450d71a2b"
+    },
+    {
+      "path": "server/src/lib/taskFiles.js",
+      "sourceSha256": "9e16d42420efe48fc891a87efc96c1afa41142344e7df804ea8f3e01405c95da",
+      "repositorySha256": "9e16d42420efe48fc891a87efc96c1afa41142344e7df804ea8f3e01405c95da"
+    },
+    {
+      "path": "server/src/lib/taskHandles.js",
+      "sourceSha256": "2dd70d0215a1c0e41ac12d07ba2c7228dd7c50389e8285bac3b2bbe9f1d2a85a",
+      "repositorySha256": "2dd70d0215a1c0e41ac12d07ba2c7228dd7c50389e8285bac3b2bbe9f1d2a85a"
+    },
+    {
+      "path": "server/src/lib/taskModification.js",
+      "sourceSha256": "98b831690ddab4ca232057a1af56c540940a6ad0264bb10926a2ee42e99670de",
+      "repositorySha256": "98b831690ddab4ca232057a1af56c540940a6ad0264bb10926a2ee42e99670de"
+    },
+    {
+      "path": "server/src/lib/taskMonitoring.js",
+      "sourceSha256": "63c5b0eb157509e1e1056ba661088fa1ab71147d06c969da27942245fec7ce8b",
+      "repositorySha256": "63c5b0eb157509e1e1056ba661088fa1ab71147d06c969da27942245fec7ce8b"
+    },
+    {
+      "path": "server/src/lib/taskParticipation.js",
+      "sourceSha256": "87e4c110323df5eb679f3f5b7df80122d258b59956b644c0c0fff91f471d7644",
+      "repositorySha256": "87e4c110323df5eb679f3f5b7df80122d258b59956b644c0c0fff91f471d7644"
+    },
+    {
+      "path": "server/src/lib/taskReleasePublish.js",
+      "sourceSha256": "26398e6399cb2b7465edabf5da9764611d671f922d8f4d0941baeb38fa611fb3",
+      "repositorySha256": "26398e6399cb2b7465edabf5da9764611d671f922d8f4d0941baeb38fa611fb3"
+    },
+    {
+      "path": "server/src/lib/taskReleases.js",
+      "sourceSha256": "c2db206d21fddf77c8139618abc402d71af8760464be6c8436584e2c8b08be42",
+      "repositorySha256": "c2db206d21fddf77c8139618abc402d71af8760464be6c8436584e2c8b08be42"
+    },
+    {
+      "path": "server/src/lib/taskRuntimeContract.js",
+      "sourceSha256": "8535463d9f7801ac90b347b688c7e5e8478f737440cdd4fb8489d7413331fb72",
+      "repositorySha256": "8535463d9f7801ac90b347b688c7e5e8478f737440cdd4fb8489d7413331fb72"
+    },
+    {
+      "path": "server/src/lib/taskUsage.js",
+      "sourceSha256": "df83e813fb9191137766cb7267cc0038429c606d581d8f5dbca83c46b68257c7",
+      "repositorySha256": "df83e813fb9191137766cb7267cc0038429c606d581d8f5dbca83c46b68257c7"
+    },
+    {
+      "path": "server/src/lib/validationSelection.js",
+      "sourceSha256": "209a481c89d5388cf5fd2cd183427b9d71dea08f67611712b2f4654c7c2a83c0",
+      "repositorySha256": "209a481c89d5388cf5fd2cd183427b9d71dea08f67611712b2f4654c7c2a83c0"
+    },
+    {
+      "path": "server/src/lib/validationUpload.js",
+      "sourceSha256": "2fb94f4d2515cfeea98fd8dd1070698e879363ca5b4e7af810f02ccf3c69983c",
+      "repositorySha256": "2fb94f4d2515cfeea98fd8dd1070698e879363ca5b4e7af810f02ccf3c69983c"
+    },
+    {
+      "path": "server/src/main.js",
+      "sourceSha256": "f0abc75b27e811a12960f531021d0df14c088705d1a6bff751f56084f5719099",
+      "repositorySha256": "f0abc75b27e811a12960f531021d0df14c088705d1a6bff751f56084f5719099"
+    },
+    {
+      "path": "server/src/models/blog.js",
+      "sourceSha256": "cfc87859afac55e7f1fb59c10cbc4c625158856ee559b09289499dddb4148386",
+      "repositorySha256": "cfc87859afac55e7f1fb59c10cbc4c625158856ee559b09289499dddb4148386"
+    },
+    {
+      "path": "server/src/models/campaign_run.js",
+      "sourceSha256": "05c8e4d13cc0622a8b4e8ca27c5a5e2789df591a7368b82b8ff3e26080983248",
+      "repositorySha256": "05c8e4d13cc0622a8b4e8ca27c5a5e2789df591a7368b82b8ff3e26080983248"
+    },
+    {
+      "path": "server/src/models/login_count.js",
+      "sourceSha256": "737d2acc69e5519da8dacb80c75108ca4de66c5c62f5285358358b6a1e6306da",
+      "repositorySha256": "737d2acc69e5519da8dacb80c75108ca4de66c5c62f5285358358b6a1e6306da"
+    },
+    {
+      "path": "server/src/models/model_download_event.js",
+      "sourceSha256": "1169b64a72d9772bb6b81bd104cd6e9a0ce794996339adf20b15fc64271930ff",
+      "repositorySha256": "1169b64a72d9772bb6b81bd104cd6e9a0ce794996339adf20b15fc64271930ff"
+    },
+    {
+      "path": "server/src/models/model_version.js",
+      "sourceSha256": "2290563d1b99ebf72c2086fba246a7b16b66945d6a3d4418eb795cda0667c5bc",
+      "repositorySha256": "2290563d1b99ebf72c2086fba246a7b16b66945d6a3d4418eb795cda0667c5bc"
+    },
+    {
+      "path": "server/src/models/registered_model.js",
+      "sourceSha256": "db8c6e5227e28902342ddea98330a880c0ea47f02eb776723c8fdd47cfaffb45",
+      "repositorySha256": "db8c6e5227e28902342ddea98330a880c0ea47f02eb776723c8fdd47cfaffb45"
+    },
+    {
+      "path": "server/src/models/task.js",
+      "sourceSha256": "36e378b3add49298dae0072b8057506436b2e4bae9f50f05514ecf5899f6aa9c",
+      "repositorySha256": "36e378b3add49298dae0072b8057506436b2e4bae9f50f05514ecf5899f6aa9c"
+    },
+    {
+      "path": "server/src/models/task_file.js",
+      "sourceSha256": "3c14b783949e0feff056da43e255d127ca89737f53710207cb2601f8539ee8bf",
+      "repositorySha256": "3c14b783949e0feff056da43e255d127ca89737f53710207cb2601f8539ee8bf"
+    },
+    {
+      "path": "server/src/models/task_participant.js",
+      "sourceSha256": "79c6361bf7d8c927a49be9c7fbd4b6fba0aa35435fa51719a5e500640c592ad6",
+      "repositorySha256": "79c6361bf7d8c927a49be9c7fbd4b6fba0aa35435fa51719a5e500640c592ad6"
+    },
+    {
+      "path": "server/src/models/task_release.js",
+      "sourceSha256": "c56d46353dcefbbeeefb8707027d217c7314b1933ffa957fb85cbf2a88b0501e",
+      "repositorySha256": "c56d46353dcefbbeeefb8707027d217c7314b1933ffa957fb85cbf2a88b0501e"
+    },
+    {
+      "path": "server/src/models/user.js",
+      "sourceSha256": "99d2a8cb5e261bf4d43be9c462baacd2ff628b29aa18787b5f5b94d78e97b2b3",
+      "repositorySha256": "99d2a8cb5e261bf4d43be9c462baacd2ff628b29aa18787b5f5b94d78e97b2b3"
+    },
+    {
+      "path": "server/src/sockets/monitoringSocket.js",
+      "sourceSha256": "ec95d922fb16c472a138d6c7204282bacc39a05f13eeb13acce635e00776337a",
+      "repositorySha256": "ec95d922fb16c472a138d6c7204282bacc39a05f13eeb13acce635e00776337a"
+    },
+    {
+      "path": "server/src/sockets/taskSockets.js",
+      "sourceSha256": "2324c86fa7d60388d0ec9f16794dc6b13270dd3939cc028d7e17aa9a6886d4ca",
+      "repositorySha256": "2324c86fa7d60388d0ec9f16794dc6b13270dd3939cc028d7e17aa9a6886d4ca"
+    },
+    {
+      "path": "server/test/auth-logout.test.js",
+      "sourceSha256": "4092d53fd8dda618d864eb4b23ae50d6d6cdaddcb80ecd8f25909d866e41de1e",
+      "repositorySha256": "4092d53fd8dda618d864eb4b23ae50d6d6cdaddcb80ecd8f25909d866e41de1e"
+    },
+    {
+      "path": "server/test/bundled-baseline.test.js",
+      "sourceSha256": "463db9bf133eb4f957dc7db1a2a446887b7a0f87567ae23722027e3683ec9fa9",
+      "repositorySha256": "463db9bf133eb4f957dc7db1a2a446887b7a0f87567ae23722027e3683ec9fa9"
+    },
+    {
+      "path": "server/test/campaign-completion.test.js",
+      "sourceSha256": "7c07b52b6b195af422cae0be5ac8faffc07c0d83b83f2d793189f284d2be0dfc",
+      "repositorySha256": "7c07b52b6b195af422cae0be5ac8faffc07c0d83b83f2d793189f284d2be0dfc"
+    },
+    {
+      "path": "server/test/campaign-config.test.js",
+      "sourceSha256": "1242365892f932c5d117ce2db0b0ef31b9ecd256c640b82ae11dca471c3f0979",
+      "repositorySha256": "1242365892f932c5d117ce2db0b0ef31b9ecd256c640b82ae11dca471c3f0979"
+    },
+    {
+      "path": "server/test/campaign-stop-routes.test.js",
+      "sourceSha256": "e6ebaa538793daecf62caab2c225aef30c20fbedb7623385a453d7b36f3422bf",
+      "repositorySha256": "e6ebaa538793daecf62caab2c225aef30c20fbedb7623385a453d7b36f3422bf"
+    },
+    {
+      "path": "server/test/evaluation-policy.test.js",
+      "sourceSha256": "911f9a41d0ff1c982c5cf522609e49f4559a5130a9c36a73c5aca758fe1f1310",
+      "repositorySha256": "911f9a41d0ff1c982c5cf522609e49f4559a5130a9c36a73c5aca758fe1f1310"
+    },
+    {
+      "path": "server/test/evaluation-runtime-revision.test.js",
+      "sourceSha256": "bcd591a91f3d88b89d5724abbb94ccc5a9bbd816271250ec87f243f544d5f517",
+      "repositorySha256": "bcd591a91f3d88b89d5724abbb94ccc5a9bbd816271250ec87f243f544d5f517"
+    },
+    {
+      "path": "server/test/idempotent-artifact-upload.test.js",
+      "sourceSha256": "ef75d405a8ef5cac7b8f63fc492970dff102c16a9bd11402148cdd70a3b535a6",
+      "repositorySha256": "ef75d405a8ef5cac7b8f63fc492970dff102c16a9bd11402148cdd70a3b535a6"
+    },
+    {
+      "path": "server/test/registry-auth-routes.test.js",
+      "sourceSha256": "0390be114607c3882bcfbf6982c01d91602af29f4bd77c3d00fea2a8e7de1cab",
+      "repositorySha256": "0390be114607c3882bcfbf6982c01d91602af29f4bd77c3d00fea2a8e7de1cab"
+    },
+    {
+      "path": "server/test/release-evaluation.test.js",
+      "sourceSha256": "1fb1e005658006e73114b327020321cf5931bd3ce85d473677277a93a0c954eb",
+      "repositorySha256": "1fb1e005658006e73114b327020321cf5931bd3ce85d473677277a93a0c954eb"
+    },
+    {
+      "path": "server/test/runtime-artifact-token.test.js",
+      "sourceSha256": "622696538176feeff8b1bf750e6a3039216b0aaad4c3d2bdd75e25df38efc954",
+      "repositorySha256": "622696538176feeff8b1bf750e6a3039216b0aaad4c3d2bdd75e25df38efc954"
+    },
+    {
+      "path": "server/test/runtime-creation-guard.test.js",
+      "sourceSha256": "4265c632382907d5c3e67d574cdad2ed9589ab5cba7e649d1078d37f16ac1857",
+      "repositorySha256": "4265c632382907d5c3e67d574cdad2ed9589ab5cba7e649d1078d37f16ac1857"
+    },
+    {
+      "path": "server/test/runtime-creation-routes.test.js",
+      "sourceSha256": "473d4476c34c4e14cb1f59163175c17221ca8a6fea52498b886dfc0df5513ceb",
+      "repositorySha256": "473d4476c34c4e14cb1f59163175c17221ca8a6fea52498b886dfc0df5513ceb"
+    },
+    {
+      "path": "server/test/server-start-command.test.js",
+      "sourceSha256": "c1269deaa65f2e321b7606b6aa58917d97b7a5a21b61b0025c88c5af90262f80",
+      "repositorySha256": "c1269deaa65f2e321b7606b6aa58917d97b7a5a21b61b0025c88c5af90262f80"
+    },
+    {
+      "path": "server/test/task-access.test.js",
+      "sourceSha256": "f1151fbeea7dfbb91d054327c1d5edc4b98b8566a3a98d9ef048d2e245ae0c95",
+      "repositorySha256": "f1151fbeea7dfbb91d054327c1d5edc4b98b8566a3a98d9ef048d2e245ae0c95"
+    },
+    {
+      "path": "server/test/task-modification.test.js",
+      "sourceSha256": "6ae4467d33a72a23b08c1660ebbb5ad2ca925e91b9409d3c1aa3b09a0be4d531",
+      "repositorySha256": "6ae4467d33a72a23b08c1660ebbb5ad2ca925e91b9409d3c1aa3b09a0be4d531"
+    },
+    {
+      "path": "server/test/task-release-publish.test.js",
+      "sourceSha256": "f1d8a2405201e079e6be71b46ec764e3989216e8bf363be027049c492a9584b0",
+      "repositorySha256": "f1d8a2405201e079e6be71b46ec764e3989216e8bf363be027049c492a9584b0"
+    },
+    {
+      "path": "server/test/validation-selection.test.js",
+      "sourceSha256": "e61e4376e0b442300eab242d86d8ecab4f33ab5613ad69e7e5c6ec19320b9366",
+      "repositorySha256": "e61e4376e0b442300eab242d86d8ecab4f33ab5613ad69e7e5c6ec19320b9366"
+    },
+    {
+      "path": "server/test/validation-upload-routes.test.js",
+      "sourceSha256": "bd0fb211ce8956f369a6a22f0a8b194467193e12fe5812d41008a17cfb06dad1",
+      "repositorySha256": "bd0fb211ce8956f369a6a22f0a8b194467193e12fe5812d41008a17cfb06dad1"
+    },
+    {
+      "path": "server/test/validation-upload.test.js",
+      "sourceSha256": "474bb49007ee0c362e5f3875f7b95068d08ef99113d49f7f1fa314582b4f96dd",
+      "repositorySha256": "474bb49007ee0c362e5f3875f7b95068d08ef99113d49f7f1fa314582b4f96dd"
+    },
+    {
+      "path": "server/yarn.lock",
+      "sourceSha256": "3c7dfcbe379c8d864a0e62525c25df856f124a3b67b13fd4284d0909fb6f31f9",
+      "repositorySha256": "3c7dfcbe379c8d864a0e62525c25df856f124a3b67b13fd4284d0909fb6f31f9"
+    },
+    {
+      "path": "client/.env.example",
+      "sourceSha256": "bb7f35df1c583fa74b56d96215b09291016b5b47d6ddd807f799188dc982eae9",
+      "repositorySha256": "bb7f35df1c583fa74b56d96215b09291016b5b47d6ddd807f799188dc982eae9"
+    },
+    {
+      "path": "client/public/runtime-config.js",
+      "sourceSha256": "aa69a599467f682a30eed542b6efb4a79673ea581f25aa768e4b892fb7739b09",
+      "repositorySha256": "aa69a599467f682a30eed542b6efb4a79673ea581f25aa768e4b892fb7739b09"
+    },
+    {
+      "path": "client/src/lib/runtimeConfig.js",
+      "sourceSha256": "88eb8b1ea97e4c32810901ac1fc05a09876088e044f51ece124d35924e271e5a",
+      "repositorySha256": "88eb8b1ea97e4c32810901ac1fc05a09876088e044f51ece124d35924e271e5a"
+    },
+    {
+      "path": "client/src/lib/runtimeConfig.test.js",
+      "sourceSha256": "4dc2b1464b533c42cb93545e4b1af2493da78c5b9d121dd839159847646acd06",
+      "repositorySha256": "4dc2b1464b533c42cb93545e4b1af2493da78c5b9d121dd839159847646acd06"
+    },
+    {
+      "path": "client/src/setupProxy.js",
+      "sourceSha256": "8bcdb772d356c427945b740a64497517e84ff4e836e8701fc6119a72bd387e32",
+      "repositorySha256": "8bcdb772d356c427945b740a64497517e84ff4e836e8701fc6119a72bd387e32"
+    },
+    {
+      "path": "server/.env.example",
+      "sourceSha256": "8c2d16744e88d74e7cbf5afcb515bb0995d3cbfb0af06392566f73f1005368c7",
+      "repositorySha256": "8c2d16744e88d74e7cbf5afcb515bb0995d3cbfb0af06392566f73f1005368c7"
+    },
+    {
+      "path": "server/src/config/deployment.js",
+      "sourceSha256": "9a7f2651995f8d057ab438029c8e227eaee5bf3294dd250846b6118eff997869",
+      "repositorySha256": "9a7f2651995f8d057ab438029c8e227eaee5bf3294dd250846b6118eff997869"
+    },
+    {
+      "path": "server/src/config/environment.js",
+      "sourceSha256": "3d62968eb27352513d206b3086e28059cd475f318f48475d958407f622b4d0d4",
+      "repositorySha256": "3d62968eb27352513d206b3086e28059cd475f318f48475d958407f622b4d0d4"
+    },
+    {
+      "path": "server/src/config/objectStorage.js",
+      "sourceSha256": "793fec2b3e9cb05203e74d8807cf708d3945b1798ab036ce0e648fa0b1e0a681",
+      "repositorySha256": "793fec2b3e9cb05203e74d8807cf708d3945b1798ab036ce0e648fa0b1e0a681"
+    },
+    {
+      "path": "server/src/config/serverManager.js",
+      "sourceSha256": "173bd1b2292b9798b029f06911021d59f4298305183b2168c0c90be5517becdf",
+      "repositorySha256": "173bd1b2292b9798b029f06911021d59f4298305183b2168c0c90be5517becdf"
+    },
+    {
+      "path": "server/test/deployment-config.test.js",
+      "sourceSha256": "6267d27c3b06d7a13a0e3f7d3095f274111f1cf6c3a0c2a0abafca38dbda5471",
+      "repositorySha256": "6267d27c3b06d7a13a0e3f7d3095f274111f1cf6c3a0c2a0abafca38dbda5471"
+    },
+    {
+      "path": "server/test/fixtures/manager-consumers.mjs",
+      "sourceSha256": "14e61f3ad4165b797d90eb418899f49e5ac25bde298426d8a57e4b1580417337",
+      "repositorySha256": "14e61f3ad4165b797d90eb418899f49e5ac25bde298426d8a57e4b1580417337"
+    },
+    {
+      "path": "server/test/server-manager-config.test.js",
+      "sourceSha256": "7c7ebfbe3232293da8a1242d0740e7487b1ab6135e901b9e56a840f1b34d08a4",
+      "repositorySha256": "7c7ebfbe3232293da8a1242d0740e7487b1ab6135e901b9e56a840f1b34d08a4"
+    },
+    {
+      "path": "server/test/server-manager-consumers.test.js",
+      "sourceSha256": "f3d8610989510e77b7750c6bd30721e17f002f01117e439c9457cdbdf5cb49fb",
+      "repositorySha256": "f3d8610989510e77b7750c6bd30721e17f002f01117e439c9457cdbdf5cb49fb"
+    }
+  ],
+  "omitted": []
+}

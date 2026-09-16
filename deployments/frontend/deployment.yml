@@ -1,0 +1,89 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fedops-web-frontend
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  minReadySeconds: 5
+  progressDeadlineSeconds: 900
+  selector:
+    matchLabels:
+      app: fedops-web-frontend
+  template:
+    metadata:
+      annotations:
+        fedops.gachon.ac.kr/release: "optional-server-validation-2026-09-08"
+      labels:
+        app: fedops-web-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: node:18.16.0
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              mkdir -p ~/.ssh &&
+              echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa &&
+              chmod 600 ~/.ssh/id_rsa &&
+              attempt=1 &&
+              until ssh-keyscan github.com >> ~/.ssh/known_hosts; do
+                if [ "$attempt" -ge 5 ]; then
+                  echo "GitHub host key lookup failed after $attempt attempts." >&2
+                  exit 1
+                fi
+                attempt=$((attempt + 1))
+                sleep 2
+              done &&
+              attempt=1 &&
+              until git clone --depth 1 -b main git@github.com:gachon-CCLab/FedOps-Web.git /app; do
+                if [ "$attempt" -ge 5 ]; then
+                  echo "FedOps-Web clone failed after $attempt attempts." >&2
+                  exit 1
+                fi
+                if [ -e /app ]; then
+                  rm -r /app
+                fi
+                attempt=$((attempt + 1))
+                sleep 3
+              done &&
+              cd /app/client &&
+              yarn &&
+              yarn start
+          env:
+            - name: SSH_PRIVATE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: fedops-github-ssh-key-secret
+                  key: sshPrivateKey
+            - name: HOST
+              value: "0.0.0.0"
+            - name: DANGEROUSLY_DISABLE_HOST_CHECK
+              value: "true"
+            - name: WDS_SOCKET_PORT
+              value: "0"
+          ports:
+            - containerPort: 3000
+          startupProbe:
+            httpGet:
+              path: /fedops/
+              port: 3000
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 120
+          readinessProbe:
+            httpGet:
+              path: /fedops/
+              port: 3000
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 3
+          lifecycle:
+            preStop:
+              exec:
+                command: ["/bin/sh", "-c", "sleep 5"]
+      terminationGracePeriodSeconds: 30
