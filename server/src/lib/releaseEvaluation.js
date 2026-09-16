@@ -6,8 +6,9 @@ import { downloadRegistryFile } from '../integrations/registryApi.js';
 import { extractReleaseEntry, sha256File } from './taskReleases.js';
 
 export const supportsEvaluationOverride = (contract) => contract?.name === 'federated-task-v3'
-  && /^1\.1\.30\.(\d+)$/.test(contract.fedopsVersion || '')
-  && Number(contract.fedopsVersion.split('.')[3]) >= 18;
+  && (contract.fedopsVersion === '1.1.30.19+onprem.20260916'
+    || (/^1\.1\.30\.(\d+)$/.test(contract.fedopsVersion || '')
+      && Number(contract.fedopsVersion.split('.')[3]) >= 18));
 
 export const parseReleaseEvaluation = (configText, serverText) => {
   // Read data only: never import or execute user-authored Release Python code.

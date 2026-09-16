@@ -8,13 +8,13 @@ import {
   getBundledBaselineTemplate,
 } from '../src/lib/bundledBaseline.js';
 
-test('bundled Baseline 0.19.0 keeps Task Data and pins optional evaluation runtime', () => {
+test('bundled Baseline 0.19.1 keeps Task Data and pins optional evaluation runtime', () => {
   const template = getBundledBaselineTemplate();
   const session = getBundledBaselineSession();
 
   assert.deepEqual(template, {
     name: 'federated-task-baseline',
-    version: '0.19.0',
+    version: '0.19.1',
     revision: 1,
   });
   assert.equal(session.distribution, 'bundled');
@@ -89,8 +89,8 @@ test('bundled Baseline 0.19.0 keeps Task Data and pins optional evaluation runti
   );
   assert.match(fs.readFileSync(serverMain.absolutePath, 'utf8'), /server_evaluation\.max_batches/);
   assert.match(fs.readFileSync(serverMain.absolutePath, 'utf8'), /prepare_validation_loader/);
-  assert.match(fs.readFileSync(pyproject.absolutePath, 'utf8'), /733f1696edc234073f0c1cd1a96e6580bfbcffeb/);
-  assert.match(fs.readFileSync(lockfile.absolutePath, 'utf8'), /version = "1.1.30.18"/);
+  assert.match(fs.readFileSync(pyproject.absolutePath, 'utf8'), /ff5f44ddea2705c8d901a54a0272f517822da8f4/);
+  assert.match(fs.readFileSync(lockfile.absolutePath, 'utf8'), /version = "1\.1\.30\.19\+onprem\.20260916"/);
   assert.match(fs.readFileSync(managerMain.absolutePath, 'utf8'), /GL_Model_V/);
   const taskMain = getBundledBaselineArtifact(
     session.files.find((file) => file.path === 'federated_task/main.py').artifactId,
@@ -197,4 +197,11 @@ test('bundled Baseline 0.3.0 remains downloadable for existing Tasks', () => {
 test('unknown bundled Baseline artifact IDs cannot resolve a filesystem path', () => {
   getBundledBaselineSession();
   assert.equal(getBundledBaselineArtifact('../../etc/passwd'), null);
+});
+
+
+test('Baseline 0.19.0 remains downloadable with its original runtime pin', () => {
+  const session = getBundledBaselineSession('0.19.0');
+  const file = session.files.find(entry => entry.path === 'pyproject.toml');
+  assert.match(fs.readFileSync(getBundledBaselineArtifact(file.artifactId).absolutePath, 'utf8'), /733f1696edc234073f0c1cd1a96e6580bfbcffeb/);
 });

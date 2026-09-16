@@ -31,6 +31,12 @@ const EVALUATION_PROFILE = Object.freeze({
   sourceRevision: '733f1696edc234073f0c1cd1a96e6580bfbcffeb',
 });
 
+const ONPREM_PROFILE = Object.freeze({
+  ...FEDERATED_TASK_V3_PROFILE,
+  fedopsVersion: '1.1.30.19+onprem.20260916',
+  sourceRevision: 'ff5f44ddea2705c8d901a54a0272f517822da8f4',
+});
+
 const withBaseline = (profile, baselineVersion = null) => ({
   ...profile,
   baselineVersion: baselineVersion || null,
@@ -47,7 +53,7 @@ export const buildLegacyTaskRuntimeContract = () => withBaseline(LEGACY_PROFILE)
 
 export const buildDefaultTaskRuntimeContract = (baseline) => (
   withBaseline(
-    baseline?.version === '0.19.0' ? EVALUATION_PROFILE : usesFederatedTaskV3(baseline?.version)
+    baseline?.version === '0.19.1' ? ONPREM_PROFILE : baseline?.version === '0.19.0' ? EVALUATION_PROFILE : usesFederatedTaskV3(baseline?.version)
       ? FEDERATED_TASK_V3_PROFILE
       : FEDERATED_TASK_V2_PROFILE,
     baseline?.version,
@@ -61,6 +67,9 @@ export const resolveTaskRuntimeContract = (task = {}) => {
     const revision = task.runtimeContract.sourceRevision;
     if (storedName === EVALUATION_PROFILE.name && revision === EVALUATION_PROFILE.sourceRevision) {
       profile = EVALUATION_PROFILE;
+    }
+    if (storedName === ONPREM_PROFILE.name && revision === ONPREM_PROFILE.sourceRevision) {
+      profile = ONPREM_PROFILE;
     }
     if (revision && revision !== profile.sourceRevision) {
       throw new Error('Unsupported immutable FedOps Runtime revision.');

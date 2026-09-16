@@ -18,6 +18,8 @@ test('Release config decides true/false; missing, interpolated or non-boolean va
 
 test('old immutable runtimes are not silently upgraded to client-metric OFF', () => {
   assert.equal(supportsEvaluationOverride(contract), true);
+  assert.equal(supportsEvaluationOverride({ ...contract, fedopsVersion: '1.1.30.19+onprem.20260916' }), true);
+  assert.equal(supportsEvaluationOverride({ ...contract, fedopsVersion: '1.1.30.15+onprem.20260916' }), false);
   assert.equal(supportsEvaluationOverride({ ...contract, fedopsVersion: '1.1.30.15' }), false);
   assert.equal(supportsEvaluationOverride({ name: 'legacy-v1' }), false);
 });

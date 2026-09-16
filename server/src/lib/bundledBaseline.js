@@ -7,9 +7,9 @@ const ASSETS_ROOT = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   '../../assets/federated-task-baseline',
 );
-const DEFAULT_VERSION = '0.19.0';
+const DEFAULT_VERSION = '0.19.1';
 const DEFAULT_REVISION = 1;
-const SUPPORTED_VERSIONS = ['0.19.0', '0.18.0', '0.17.0', '0.16.0', '0.15.0', '0.14.0', '0.13.0', '0.12.0', '0.11.0', '0.10.0', '0.9.0', '0.8.0', '0.7.0', '0.6.0', '0.5.0', '0.4.0', '0.3.0'];
+const SUPPORTED_VERSIONS = ['0.19.1', '0.19.0', '0.18.0', '0.17.0', '0.16.0', '0.15.0', '0.14.0', '0.13.0', '0.12.0', '0.11.0', '0.10.0', '0.9.0', '0.8.0', '0.7.0', '0.6.0', '0.5.0', '0.4.0', '0.3.0'];
 const MAX_MANIFEST_BYTES = 2 * 1024 * 1024;
 
 const cachedReleases = new Map();
