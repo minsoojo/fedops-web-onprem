@@ -1,3 +1,4 @@
+import { downloadUrl } from '../lib/runtimeConfig';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
@@ -113,7 +114,7 @@ const GlobalModelPage = () => {
                     <Button
                       variant="contained"
                       color="primary"
-                      href={model.url}
+                      href={downloadUrl(model.url)}
                       target="_blank"
                       rel="noopener noreferrer"
                       startIcon={<DownloadRoundedIcon />}
@@ -174,7 +175,7 @@ const GlobalModelPage = () => {
                   <Button
                     variant="contained"
                     color="primary"
-                    href={model.url}
+                    href={downloadUrl(model.url)}
                     target="_blank"
                     rel="noopener noreferrer"
                     startIcon={<DownloadRoundedIcon />}

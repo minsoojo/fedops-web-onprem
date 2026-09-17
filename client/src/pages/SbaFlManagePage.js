@@ -1,3 +1,4 @@
+import { downloadUrl } from '../lib/runtimeConfig';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -508,7 +509,7 @@ const SbaFlManagePage = ({ title }) => {
                     <TableCell>{model.tensorCount ?? '-'}</TableCell>
                     <TableCell>{model.sizeBytes} bytes</TableCell>
                     <TableCell>
-                      <Button href={model.url} target="_blank" rel="noopener noreferrer">
+                      <Button href={downloadUrl(model.url)} target="_blank" rel="noopener noreferrer">
                         Download
                       </Button>
                     </TableCell>

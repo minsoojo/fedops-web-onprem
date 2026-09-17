@@ -1,3 +1,4 @@
+import { downloadUrl } from '../lib/runtimeConfig';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import {
@@ -72,7 +73,7 @@ const SharedTaskDetailPage = () => {
 
   const openDownload = (url) => {
     const anchor = document.createElement('a');
-    anchor.href = url;
+    anchor.href = downloadUrl(url);
     anchor.rel = 'noopener noreferrer';
     document.body.appendChild(anchor);
     anchor.click();
