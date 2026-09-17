@@ -1,6 +1,15 @@
 jest.mock('axios', () => ({ defaults: {} }));
 
 describe('public deployment configuration', () => {
+  test('shared Web/storage origin leaves ordinary API downloads unchanged', () => {
+    window.__FEDOPS_CONFIG__ = { objectStorageOrigin: window.location.origin };
+    const { downloadUrl } = require('./runtimeConfig');
+    const api = `${window.location.origin}/fedops/api/task-releases/123/artifact`;
+    expect(downloadUrl(api)).toBe(api);
+    expect(downloadUrl('/fedops/api/tasks')).toBe('/fedops/api/tasks');
+    expect(downloadUrl(`${window.location.origin}/global-model/m?X-Amz-Signature=abc`))
+      .toBe('/fedops/objects/global-model/m?X-Amz-Signature=abc');
+  });
   afterEach(() => { delete window.__FEDOPS_CONFIG__; jest.resetModules(); });
   test('same built source reads A/B public origins and includes the existing API paths', () => {
     for (const name of ['a', 'b']) {

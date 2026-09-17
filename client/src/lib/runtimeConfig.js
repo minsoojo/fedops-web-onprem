@@ -18,6 +18,7 @@ export function downloadUrl(value) {
   const url = new URL(value, window.location.origin);
   const storageOrigin = origin(config.objectStorageOrigin, 'objectStorageOrigin');
   if (url.origin !== storageOrigin || url.username || url.password) return value;
+  if (!url.searchParams.has('X-Amz-Signature') && !url.searchParams.has('Signature')) return value;
   return `/fedops/objects${url.pathname}${url.search}`;
 }
 axios.defaults.baseURL = apiOrigin;

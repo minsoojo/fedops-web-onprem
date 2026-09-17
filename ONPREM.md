@@ -16,3 +16,14 @@ Frontend 한 포트를 포워딩해 `http://localhost:<port>/fedops/`로 접속�
 모델/파일 다운로드 링크는 설정된 `objectStorageOrigin`에 해당할 때만 `/fedops/objects/...`로 바뀐다. Frontend는 `OBJECT_STORAGE_PROXY_TARGET`(내부 MinIO)에 전달하면서 `OBJECT_STORAGE_PUBLIC_ORIGIN`의 Host와 원래 경로·쿼리를 유지해 S3 서명을 검증받는다. GET/HEAD만 허용하고 Web 로그인 Cookie/Authorization은 MinIO에 전달하지 않는다. 외부 URL을 대상으로 하는 임의 프록시는 제공하지 않는다.
 
 수정 Frontend 이미지와 Chart 설정을 함께 적용한다. 외부 FL 장치의 TCP 통신과 다운로드한 클라이언트 설정의 Manager 주소는 브라우저 포워딩과 별도다. 기존 도메인 접속도 같은 코드로 지원한다.
+# IP 단일 진입점 (2026-09-17)
+
+Chart `access.singleOrigin=true`와 `access.webHost=192.9.201.220`으로
+`http://192.9.201.220/fedops/`를 사용한다. 해당 IP에 도달 가능한 기기에는
+hosts 수정이나 포트포워딩이 필요 없다. 브라우저 API/Socket은 현재 origin을 사용한다.
+Web과 MinIO의 origin이 같을 때 일반 API 다운로드 주소를 잘못 바꾸지 않도록
+`downloadUrl`은 설정된 저장소의 서명 URL만 `/fedops/objects`로 변환한다.
+공개 Manager URL은 `/fedops/services/manager`, MinIO 서명 URL은 IP 루트를 사용한다.
+
+검증: Frontend 설정 테스트 4개, 로컬 실제 Envoy/Frontend/Backend/MongoDB/MinIO에서
+가입·로그인·쿠키·Socket.IO·서명 다운로드 통과. F 배포와 실제 브라우저 검증은 별도다.
